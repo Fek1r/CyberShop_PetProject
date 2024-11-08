@@ -38,7 +38,7 @@
     background-image: url('./facebook.jpg');
     background-size: cover;
     background-position: center;
-    margin-left: 0.5%;
+
 }
 
 .image2 {
@@ -47,7 +47,7 @@
     background-image: url('./instagram.jpg');
     background-size: cover;
     background-position: center;
-    margin-left: 0.5%;
+
 }
 
 .links{
