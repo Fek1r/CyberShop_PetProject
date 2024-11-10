@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './header/header.jsx';
+
+import Head from './head/head.jsx';
+import Home from './home/home.jsx'
 
 
 
 function App() {
   return (
     <Router>
-      <Header/>
+      <Head/>
+      <Home/>
       <Routes>
         
       </Routes>

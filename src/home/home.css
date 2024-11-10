@@ -1,0 +1,60 @@
+.home {
+    margin-top: auto;
+    position: relative;
+    width: 100vw;
+}
+
+.main-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.main-info h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: azure;
+    line-height: 1.4;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.main-info button {
+    background: linear-gradient(to right, #67b26f, #4ca2cd);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.main-info button p {
+    margin: 0;
+    text-align: center;
+}
+
+.main-info button:hover {
+    background: linear-gradient(to right, #4ca2cd, #67b26f);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-info button:focus {
+    outline: none;
+}
+
+.main-info button:active {
+    transform: scale(0.98);
+}

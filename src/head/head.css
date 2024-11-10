@@ -1,0 +1,110 @@
+.head{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logotype{
+    margin-top: 1vh;
+    flex: 1;
+    width: 100%;
+    height: 9vh;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(1.5);
+    background-image: url('./imagen.png');
+    
+
+}
+.logotype-n{
+margin-left: 1vw;
+}
+
+.logotype-n a{
+    text-decoration: none;
+    }
+.logotype-n p{
+    filter: brightness(1.5);
+    margin-block-start: 0;
+    color: rgb(240, 230, 230); 
+     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+}
+    
+.ul-elements{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.links-components{
+    display: flex;
+    margin-right: 4vw;
+    list-style: none;
+    padding-inline-start: 0;
+    width: auto;
+    justify-content: center;
+    align-items: center;  
+}
+
+.links-components li {
+    filter: brightness(5);
+    margin: 2vh;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+
+}
+
+.links-components li a {
+    text-decoration: none;
+    color: rgb(223, 211, 211); 
+    text-transform: uppercase;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    width: 20%;
+    margin-right: 4vw;
+}
+
+.contact-button .circle {
+    width: 12px;
+
+    height: 12px;
+    background-color: rgb(240, 230, 230);
+    border-radius: 50%;
+}
+
+.contact-button button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(240, 230, 230);
+    background-color: transparent;
+    border: 2px solid rgb(240, 230, 230);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-button button:hover {
+    background-color: rgb(240, 230, 230);
+    color: rgb(12, 11, 11);
+}
+
