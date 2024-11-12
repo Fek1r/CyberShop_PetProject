@@ -1,4 +1,5 @@
 import './home.css';
+import Footer from '../footer/footer';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
                     <p>Iesniegt pieprasījumu</p>
                 </button>
             </div>
+            <Footer/>
         </div>
     );
 }

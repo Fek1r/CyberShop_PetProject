@@ -86,9 +86,9 @@
 }
 
 .on-site-agent-title {
+    margin-top: 3vh;
     font-size: 1rem;
     color: #aaa;
-    margin: 0 0 0.5rem;
 }
 
 .on-site-agent-phone, .on-site-agent-email {

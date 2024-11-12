@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../footer/footer';
 import './contact.css';
 import img from './visa.png';
 
@@ -43,6 +44,7 @@ function Contact() {
                     <p className="on-site-agent-email">E: smolloy@croxleypark.com</p>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

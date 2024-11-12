@@ -1,6 +1,7 @@
 import React from 'react';
 import './new-jau.css';
 import partyImage from './party.png';
+import Footer from '../footer/footer';
 
 const NewsSection = () => {
     const newsData = [
@@ -40,6 +41,7 @@ const NewsSection = () => {
                     <a href={news.link} className="news-link">Read more</a>
                 </div>
             ))}
+            <Footer/>
         </div>
     );
 };
