@@ -1,0 +1,101 @@
+/* Основной контейнер для новостного раздела */
+.news-section-container {
+    background-color:black; /* Темный фон */
+    color: #ffffff;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+/* Заголовок раздела */
+.section-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Подзаголовок раздела */
+.section-subtitle {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для карт с новостями */
+.cards-container {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение карт */
+    gap: 20px;
+}
+
+/* Карточка новости */
+.news-card {
+    background-color: #252945; /* Темный фон для карт */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Заголовок новости */
+.card-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Описание новости */
+.card-description {
+    color: #ccc; /* Светлый цвет текста для контента */
+    font-size: 1rem;
+}
+
+/* Кнопка "Читать далее" */
+.read-more-button {
+    background-color: #6a5acd; /* Яркий цвет для кнопки */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #8a7fc7; /* Цвет кнопки при наведении */
+}
+
+/* Текст с ценой (если есть) */
+.price-text {
+    color: #aaa;
+    font-size: 0.875rem;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 720px) {
+    .news-section-container {
+        padding: 20px; /* Уменьшаем отступы на мобильных */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Уменьшаем размер заголовка */
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .news-card {
+        padding: 15px; /* Уменьшаем отступы внутри карточки */
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
+    }
+}
