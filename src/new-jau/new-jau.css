@@ -1,101 +1,52 @@
-/* Основной контейнер для новостного раздела */
-.news-section-container {
-    background-color:black; /* Темный фон */
-    color: #ffffff;
-    padding: 40px;
-    margin-top: 50px;
+/* NewsSection.css */
+
+.news-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Заголовок раздела */
-.section-title {
-    color: #ffffff;
-    font-size: 2.5rem;
+.news-item {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-/* Подзаголовок раздела */
-.section-subtitle {
-    color: #aaa;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-/* Контейнер для карт с новостями */
-.cards-container {
-    display: flex;
-    flex-direction: column; /* Вертикальное расположение карт */
-    gap: 20px;
-}
-
-/* Карточка новости */
-.news-card {
-    background-color: #252945; /* Темный фон для карт */
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-/* Заголовок новости */
-.card-title {
-    margin: 0;
-    font-size: 1.8rem;
+.news-title {
+    font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* Описание новости */
-.card-description {
-    color: #ccc; /* Светлый цвет текста для контента */
-    font-size: 1rem;
+.news-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 15px;
 }
 
-/* Кнопка "Читать далее" */
-.read-more-button {
-    background-color: #6a5acd; /* Яркий цвет для кнопки */
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+.news-link {
+    color: #0d6efd;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.read-more-button:hover {
-    background-color: #8a7fc7; /* Цвет кнопки при наведении */
-}
-
-/* Текст с ценой (если есть) */
-.price-text {
-    color: #aaa;
-    font-size: 0.875rem;
-}
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 720px) {
-    .news-section-container {
-        padding: 20px; /* Уменьшаем отступы на мобильных */
-    }
-
-    .section-title {
-        font-size: 2rem; /* Уменьшаем размер заголовка */
-    }
-
-    .section-subtitle {
-        font-size: 1rem;
-    }
-
-    .news-card {
-        padding: 15px; /* Уменьшаем отступы внутри карточки */
-    }
-
-    .card-title {
-        font-size: 1.5rem;
-    }
-
-    .card-description {
-        font-size: 0.95rem;
-    }
+.news-link:hover {
+    text-decoration: underline;
 }
