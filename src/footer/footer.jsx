@@ -9,9 +9,9 @@ const Footer = () => {
         <h2 className = 'loggo'>Baltic industrial park</h2>
         <nav className="footer-nav">
             <Link to="/" className='foot_a'>Par mums</Link>
-            <Link to="/" className='foot_a'>Kontakti</Link>
+            <Link to="/" className='/contact'>Kontakti</Link>
             <Link to="/" className='foot_a'>Projekti</Link>
-            <Link to="/" className='foot_a'>Jaunumi</Link>
+            <Link to="/" className='/new-jau'>Jaunumi</Link>
             <Link to="/" className='foot_a'>Ilgtspējība</Link>
         </nav>
         <p>info.balticindustrial@gmail.com</p>

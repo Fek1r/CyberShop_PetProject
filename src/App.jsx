@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Head from './head/head.jsx';
 import Home from './home/home.jsx';
 import NewJau from './new-jau/new-jau';
-import Contact from './contact/contact';  // Убедитесь, что импортируете NewJau
+import Contact from './contact/contact';
+import Footer from './footer/footer.jsx'; 
 
 function App() {
   return (
