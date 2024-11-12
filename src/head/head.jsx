@@ -27,7 +27,7 @@ function Head(){
                 </div>
                 <div class="contact-button">
                     <div class="circle"></div>
-                    <button>Contact Us</button>
+                    <button><Link to="/contact">Contact Us</Link></button>
                 </div>
             </div>
         </div>
