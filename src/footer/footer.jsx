@@ -10,7 +10,7 @@ const Footer = () => {
         <nav className="footer-nav">
             <Link to="/" className='foot_a'>Par mums</Link>
             <Link to="/contact" className='/foot_a'>Kontakti</Link>
-            <Link to="/" className='foot_a'>Projekti</Link>
+            <Link to="/projects" className='foot_a'>Projekti</Link>
             <Link to="/new-jau" className='foot_a'>Jaunumi</Link>
             <Link to="/" className='foot_a'>Ilgtspējība</Link>
         </nav>

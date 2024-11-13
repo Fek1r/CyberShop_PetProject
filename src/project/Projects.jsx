@@ -8,21 +8,21 @@ import Footer from '../footer/footer';
 const Projects = () => {
     const projectsData = [
         {
-            title: "Komercīlie īpašumi",
+            title: "Projekt 1",
             description: "Īss apraksts",
             image: projectImage1,
             link: "#",
             align: "right"
         },
         {
-            title: "Dzīvojamie īpašumi",
+            title: "Projekt 2",
             description: "Īss apraksts",
             image: projectImage2,
             link: "#",
             align: "left"
         },
         {
-            title: "Visi",
+            title: "Projekt 3",
             description: "Īss apraksts",
             image: projectImage3,
             link: "#",
