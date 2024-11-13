@@ -3,6 +3,7 @@
     height: auto;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .logotype{
@@ -104,5 +105,15 @@ margin-left: 1vw;
 .contact-button button:hover {
     background-color: rgb(240, 230, 230);
     color: rgb(12, 11, 11);
+}
+
+.contact-button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.contact-button a:hover{
+    color: black;
 }
 
