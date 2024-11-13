@@ -22,7 +22,7 @@ function Head(){
                         <li><Link to="/projects">Projekti</Link></li>
                         <li><Link to="/new-jau">Jaunumi</Link></li>
                         <li><Link to="/projekti">Ilgtspējība</Link></li>
-                        <li><Link to="/projekti">Par Mums</Link></li>
+                        <li><Link to="/about">Par Mums</Link></li>
                     </ul>
                 </div>
                 <div class="contact-button">
