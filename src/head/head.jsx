@@ -19,7 +19,7 @@ function Head(){
                 </div>
                 <div className="ul-elements">
                     <ul className="links-components">
-                        <li><Link to="/projekti">Projekti</Link></li>
+                        <li><Link to="/projects">Projekti</Link></li>
                         <li><Link to="/new-jau">Jaunumi</Link></li>
                         <li><Link to="/projekti">Ilgtspējība</Link></li>
                         <li><Link to="/projekti">Par Mums</Link></li>
