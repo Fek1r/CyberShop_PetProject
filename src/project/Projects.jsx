@@ -9,21 +9,21 @@ const Projects = () => {
     const projectsData = [
         {
             title: "Projekt 1",
-            description: "Īss apraksts",
+            description: "Testa teksts:Latviešu valoda ir viena no baltu valodām, kas tiek runāta galvenokārt Latvijā. Tā ir oficiālā valoda, un tajā ir bagāta literatūras un kultūras mantojums. Latviešu valodā ir dažādi dialekti, un valoda ir attīstījusies gadsimtu gaitā.",
             image: projectImage1,
             link: "#",
             align: "right"
         },
         {
             title: "Projekt 2",
-            description: "Īss apraksts",
+            description: "Testa teksts:Latviešu valoda ir viena no baltu valodām, kas tiek runāta galvenokārt Latvijā. Tā ir oficiālā valoda, un tajā ir bagāta literatūras un kultūras mantojums. Latviešu valodā ir dažādi dialekti, un valoda ir attīstījusies gadsimtu gaitā.",
             image: projectImage2,
             link: "#",
             align: "left"
         },
         {
             title: "Projekt 3",
-            description: "Īss apraksts",
+            description: "Testa teksts:Latviešu valoda ir viena no baltu valodām, kas tiek runāta galvenokārt Latvijā. Tā ir oficiālā valoda, un tajā ir bagāta literatūras un kultūras mantojums. Latviešu valodā ir dažādi dialekti, un valoda ir attīstījusies gadsimtu gaitā.",
             image: projectImage3,
             link: "#",
             align: "right"
