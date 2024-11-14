@@ -1,42 +1,51 @@
 .footer {
-    background-color:#444444; /* Adjust color as needed */
-    color: white;
-    text-align: center;
-    padding: 20px 0 !important;
-    padding-bottom: 5vh !important;
-}
-.footer-nav {
-    margin-bottom: 10px !important;
-    display: flex !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-}
-.promezutok2{
-    margin-top: 0;
-    background-size: cover;
-    background-position: center;
-    background-color: black;
+    background-color: #eaeaea; /* Light background */
+    color: black; /* Black text color */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-section {
+    flex: 1 1 150px;
+    margin: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    color: black; /* Black header text */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-link {
+    color: black; /* Black link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+  }
+  
+  .footer-bottom {
     width: 100%;
-    height: 8vh;
-}
-.loggo{
-    margin-bottom: 3vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.footer-nav a {
-    color: white !important;
-    margin: 5px 10px !important;
-    text-decoration: none !important;
-    transition: color 0.3s ease-in-out, transform 0.1s ease-in-out !important; 
-}
-
-.footer-nav a:hover {
-    color: blue !important; 
-
-}
-.footer p {
-    margin-top: 0;
-    margin: 10px 0 0 0 !important;
-}
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    font-size: 0.9rem;
+    color: black;
+  }
+  

@@ -3,8 +3,9 @@
   font-family: 'Montserrat', sans-serif;
   padding: 4vh 2vw;
   margin-top:5vh;
-  background-color: #222;
-  color: #fff;  /* Белый текст */
+  width:100%;
+  background-color:white;
+  color:black;  /* Белый текст */
 }
 
 /* Заголовок */

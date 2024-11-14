@@ -11,7 +11,7 @@ function Contact() {
                 <div className="agent">
                     <img src={img} alt="logo" className="img-logo" />
                     <div className="agent-info">
-                        <h2 className="agent-name">Romans Koko</h2>
+                        <h2 className="agent-name">Romans</h2>
                         <p className="agent-phone">T: +371 00 000 000</p>
                         <p className="agent-email">E: romankoko@gmail.com</p>
                     </div>
@@ -19,7 +19,7 @@ function Contact() {
                 <div className="agent">
                     <img src={img} alt="logo" className="img-logo" />
                     <div className="agent-info">
-                        <h2 className="agent-name">Belijs Koko</h2>
+                        <h2 className="agent-name">Belijs</h2>
                         <p className="agent-phone">T: +371 00 000 000</p>
                         <p className="agent-email">E: belijkoko@gmail.com</p>
                     </div>
@@ -27,7 +27,7 @@ function Contact() {
                 <div className="agent">
                     <img src={img} alt="logo" className="img-logo" />
                     <div className="agent-info">
-                        <h2 className="agent-name">Vovka Koko</h2>
+                        <h2 className="agent-name">Vovka</h2>
                         <p className="agent-phone">T: +371 00 000 000</p>
                         <p className="agent-email">E: Vovankoko@gmail.com</p>
                     </div>

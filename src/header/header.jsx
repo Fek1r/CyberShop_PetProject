@@ -23,14 +23,17 @@ function Header() {
                 </div>
                 
                 <ul className="link-container">
-                    <li className="link-component">PROJECTS</li>
-                    <li className="link-component">NEWS</li>
-                    <li className="link-component">ABOUT US</li>
-                    <li className="link-component">MAINTENANCE</li>
+                    <li className="link-component"><Link to="/project">PROJECTS</Link></li>
+                    <li className="link-component"><Link to="/new-jau">NEWS</Link></li>
+                    <li className="link-component"><Link to="/">ABOUT US</Link></li>
+                    <li className="link-component"> <Link to="/location">LOCATION</Link></li>
+                    <li className="link-component"> <Link to="/solution">SOLUTIONS</Link></li>
+                    <li className="link-component"> <Link to="/park">THE PARK</Link></li>
+                    <li className="link-component"> <Link to="/planet">PLANET BALTICA</Link></li>
                 </ul>
 
                 <div className="contact-container">
-                    <button>CONTACT US</button>
+                    <button><Link to="/contact">CONTACT US</Link></button>
                 </div>
               
             </div>

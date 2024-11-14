@@ -1,7 +1,7 @@
 /* Основной контейнер */
 .contact {
-    background-color: #000; /* Черный фон */
-    color: #fff;
+    background-color: white; 
+    padding-top:15vh !important;/* Черный фон */
     padding: 2rem;
     margin-top:3vh;
 }
@@ -40,7 +40,7 @@
 /* Информация об агенте */
 .agent-info {
     margin-top: 3vh;
-    color: #ccc; /* Серый текст для контактов */
+    color:black; /* Серый текст для контактов */
 }
 
 /* Имя агента */
@@ -48,19 +48,19 @@
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #fff;
+    color: ;
 }
 
 /* Телефон и email */
 .agent-phone, .agent-email {
     font-size: 0.9rem;
-    color: #aaa; /* Светло-серый для контактов */
+    color: black; /* Светло-серый для контактов */
     margin: 0;
 }
 
 /* Раздел On-site */
 .on-site {
-    border-top: 1px solid #555; /* Разделительная линия сверху */
+    border-top: 1px solid black; /* Разделительная линия сверху */
     padding-top: 2rem;
     margin-top: 2rem;
 }
@@ -83,19 +83,19 @@
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.3rem;
-    color: #fff;
+    color: black;
 }
 
 .on-site-agent-title {
     margin-top: 3vh;
     font-size: 1rem;
-    color: #aaa;
+    color: black;
 }
 
 .on-site-agent-phone, .on-site-agent-email {
     font-size: 0.9rem;
     margin-top: 1vh;
-    color: #aaa;
+    color: black;
 
 }
 

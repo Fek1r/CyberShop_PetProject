@@ -7,6 +7,9 @@ import Contact from './contact/contact';
 import Projects from './project/Projects.jsx';
 import Footer from './footer/footer.jsx'; 
 import Location from './location/location.jsx';
+import Solutions from './solution/solution.jsx'
+import Park from './park/park.jsx'
+import Planet from './planet/planet.jsx'
 
 
 function App() {
@@ -17,9 +20,12 @@ function App() {
         <Route path="/" element={<Home />} /> {/* Главная страница */}
         <Route path="/new-jau" element={<NewJau />} /> {/* Страница для NewJau */}
         <Route path='/contact' element={<Contact />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/project' element={<Projects />} />
         <Route path='/about' element={<About />} />
         <Route path='/location' element={<Location />} />
+        <Route path='/solution' element={<Solutions />} />
+        <Route path='/park' element={<Park />} />
+        <Route path='/planet' element={<Planet />} />
       </Routes>
     </Router>
   );

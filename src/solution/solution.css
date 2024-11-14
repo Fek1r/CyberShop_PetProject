@@ -1,0 +1,104 @@
+/* Общие стили для всего раздела Solutions */
+.solutions-section {
+    background-color: #FFFFFF; /* Белый фон */
+    color: #000000; /* Черный текст */
+    padding-top: 15vh !important;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    animation: fadeIn 1s ease-in-out; /* Плавное появление всего раздела */
+}
+
+/* Анимация для плавного появления секции */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Контент раздела */
+.solutions-content {
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin-top: 5vh;
+    opacity: 0;
+    transform: translateY(20px); /* Исходное положение для анимации */
+    animation: fadeInUp 1s ease forwards; /* Плавная анимация появления */
+}
+
+/* Анимация появления контента снизу */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Заголовок */
+.solutions-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Описание */
+.solutions-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Контейнер для изображения */
+.solutions-image-container {
+    width: 100%;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards; /* Анимация для изображения */
+}
+
+/* Изображение */
+.solutions-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Плавный эффект увеличения */
+}
+
+/* Эффект увеличения изображения при наведении */
+.solutions-image-container:hover .solutions-image {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    .solutions-section {
+        padding-top: 10vh; /* Меньший отступ сверху на мобильных */
+    }
+
+    .solutions-title {
+        font-size: 2.5rem; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+
+    .solutions-description {
+        font-size: 1.1rem; /* Уменьшаем размер шрифта для описания */
+    }
+
+    .solutions-image-container {
+        max-width: 100%;
+    }
+}

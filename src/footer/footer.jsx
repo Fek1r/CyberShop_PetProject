@@ -1,23 +1,56 @@
-import './footer.css';
 import React from 'react';
-/*import { useLocation } from 'react-router-dom';*/
+import './footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="footer">
-        <h2 className = 'loggo'>Baltic industrial park</h2>
-        <nav className="footer-nav">
-            <Link to="/about" className='foot_a'>Par mums</Link>
-            <Link to="/contact" className='/foot_a'>Kontakti</Link>
-            <Link to="/projects" className='foot_a'>Projekti</Link>
-            <Link to="/new-jau" className='foot_a'>Jaunumi</Link>
-            <Link to="/" className='foot_a'>Ilgtspējība</Link>
-        </nav>
-        <p>info.balticindustrial@gmail.com</p>
-      <p>+371 00 000 00</p>
+      <div className="footer-section">
+        <Link to="/home" className="footer-link"><h3>ABOUT</h3></Link>
+        <ul>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+        </ul>
+      </div>
+
+      <div className="footer-section">
+        <Link to="/location" className="footer-link"><h3>LOCATION</h3></Link>
+        <ul>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+        </ul>
+      </div>
+
+      <div className="footer-section">
+        <Link to="/project" className="footer-link"><h3>PROJECT</h3></Link>
+        <ul>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+        </ul>
+      </div>
+
+      <div className="footer-section">
+        <Link to="/new-jau" className="footer-link"><h3>NEWS</h3></Link>
+        <ul>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+        </ul>
+      </div>
+
+      <div className="footer-section">
+        <Link to="/contact" className="footer-link"><h3>CONTACT</h3></Link>
+        <ul>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+          <li><Link to="/" className="footer-link">Page_name</Link></li>
+        </ul>
+      </div>
+
+      <div className="footer-bottom">
+        <h3>CONNECT WITH US ON SOCIAL MEDIA</h3>
+        <p>© 2024 Baltic Industrial Park.</p>
+      </div>
     </footer>
   );
-}
+};
 
 export default Footer;
