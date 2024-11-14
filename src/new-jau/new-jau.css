@@ -1,23 +1,23 @@
-/* NewsSection.css */
-
 .news-section {
-    background-color: #000;
+    background-color: #F2F2F2;
     color: #fff;
     padding: 20px;
-    margin-top:4vh;
+    padding-top: 15vh; /* Отступ сверху, чтобы контент был ниже хедера */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    min-height: 130vh; /* Обеспечивает, что секция займет минимум всю высоту экрана */
 }
 
 .footer {
     width: 100%;
+    margin-top:5vh;
     text-align: center; /* Ensure text aligns to the center */
 }
 
 .news-item {
-    background-color: #1a1a1a;
+    background-color:#fff;
     border-radius: 8px;
     padding: 30px;
     margin: 15px;
@@ -37,7 +37,7 @@
     align-items: center;               /* Центрировать контент по вертикали */
     width: 125px;                       /* Установить ширину кнопки (увеличена с 50px) */
     height: 40px;                       /* Установить высоту кнопки */        /* Зеленый цвет фона */
-    color: white;                       /* Белый цвет текста */
+    color: black;                       /* Белый цвет текста */
     font-size: 1rem;                    /* Увеличен размер шрифта для лучшей читаемости */
     text-align: center;                 /* Центрировать текст внутри кнопки */
     border: none;                       /* Убрать обводку */
@@ -61,6 +61,7 @@
 
 .news-title {
     font-size: 1.2rem;
+    color:black;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: left; /* Ensure title is left-aligned */
@@ -68,7 +69,7 @@
 
 .news-description {
     font-size: 0.9rem;
-    color: #ccc;
+    color: black;
     margin-bottom: 15px;
     text-align: left; /* Ensure description is left-aligned */
 }

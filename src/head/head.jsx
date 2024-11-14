@@ -21,15 +21,14 @@ function Head() {
         <div className="logotype-n">
           <Link to="/">
             <div className="logotype"></div>
-            <p>BALTIJAS INDUSTRIĀLAIS PARKS</p>
+            <p>BALTIJAS INDUSTRIALAIS PARKS</p>
           </Link>
         </div>
         <div className="ul-elements">
           <ul className="links-components">
             <li><Link to="/projects">Projekti</Link></li>
             <li><Link to="/new-jau">Jaunumi</Link></li>
-            <li><Link to="/projekti">Ilgtspējība</Link></li>
-            <li><Link to="/about">Par Mums</Link></li>
+            <li><Link to="/location">Location</Link></li>
           </ul>
         </div>
         <div className="contact-button">

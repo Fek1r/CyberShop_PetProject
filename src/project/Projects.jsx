@@ -8,22 +8,22 @@ import Footer from '../footer/footer';
 const Projects = () => {
     const projectsData = [
         {
-            title: "Projekt 1",
-            description: "Testa teksts:Latviešu valoda ir viena no baltu valodām, kas tiek runāta galvenokārt Latvijā. Tā ir oficiālā valoda, un tajā ir bagāta literatūras un kultūras mantojums. Latviešu valodā ir dažādi dialekti, un valoda ir attīstījusies gadsimtu gaitā.",
+            title: "PROJECT NAME",
+            description:"Testa teksts:Baltic Industrial Park.",
             image: projectImage1,
             link: "#",
             align: "right"
         },
         {
-            title: "Projekt 2",
-            description: "Testa teksts:Latviešu valoda ir viena no baltu valodām, kas tiek runāta galvenokārt Latvijā. Tā ir oficiālā valoda, un tajā ir bagāta literatūras un kultūras mantojums. Latviešu valodā ir dažādi dialekti, un valoda ir attīstījusies gadsimtu gaitā.",
+            title: "PROJECT NAME",
+            description: "Testa teksts:Baltic Industrial Park.",
             image: projectImage2,
             link: "#",
             align: "left"
         },
         {
-            title: "Projekt 3",
-            description: "Testa teksts:Latviešu valoda ir viena no baltu valodām, kas tiek runāta galvenokārt Latvijā. Tā ir oficiālā valoda, un tajā ir bagāta literatūras un kultūras mantojums. Latviešu valodā ir dažādi dialekti, un valoda ir attīstījusies gadsimtu gaitā.",
+            title: "PROJECT NAME",
+            description: "Testa teksts:Baltic Industrial Park.",
             image: projectImage3,
             link: "#",
             align: "right"

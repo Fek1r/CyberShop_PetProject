@@ -1,183 +1,182 @@
 /* Сброс и базовые стили */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    height: 100%;  /* Гарантирует, что body займет всю высоту экрана */
-    box-sizing: border-box; /* Учитываем отступы и бордеры при расчете ширины */
-  }
-  
-  /* Хедер (фиксированный) */
-  .head {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    background-color: transparent;  /* Изначально прозрачный */
-    position: fixed;  /* Фиксированное позиционирование */
-    top: -100px;  /* Изначально хедер скрыт за пределами экрана */
-    left: 0;
-    right: 0;
-      /* Отступы хедера в vh и vw для точной подгонки */
-    transition: background-color 0.3s ease, top 0.5s ease; /* Плавный переход фона и положения */
-    z-index: 1000; /* Хедер поверх всего контента */
-    opacity: 0;  /* Изначально скрытый */
-    animation: slideIn 0.5s forwards;  /* Плавное появление хедера */
-  }
-  
-  /* Анимация для плавного появления */
-  @keyframes slideIn {
-    0% {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Хедер (фиксированный) */
+.head {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0; /* Убираем отступ сверху */
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease, top 0.5s ease;
+  z-index: 1000;
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+/* Анимация для плавного появления */
+@keyframes slideIn {
+  0% {
       top: -100px;
       opacity: 0;
-    }
-    100% {
+  }
+  100% {
       top: 0;
       opacity: 1;
-    }
   }
-  
-  .head.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);  /* Темный фон при прокрутке */
-  }
-  
-  /* Логотип */
-  .logotype {
-    margin-top: 1vh;
-    flex: 1;
-    width: 100%;
-    height: 9vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: brightness(1.5);
-    background-image: url('./imagen.png');
-  }
-  
-  .logotype-n {
-    margin-left: 1vw;
-  }
-  
-  .logotype-n a {
-    text-decoration: none;
-  }
-  
-  .logotype-n p {
-    filter: brightness(1.5);
-    margin: 0;
-    color: rgb(240, 230, 230);
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-  }
-  
-  /* Навигация */
-  .ul-elements {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .links-components {
-    display: flex;
-    margin-right: 4vw;
-    list-style: none;
-    padding-inline-start: 0;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .links-components li {
-    margin: 2vh;
-    font-weight: 300;
-  }
-  
-  .links-components li a {
-    text-decoration: none;
-    color: rgb(223, 211, 211);
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  
-  .links-components li a:hover {
-    color: rgb(255, 255, 255); /* Белый цвет при наведении */
-  }
-  
-  /* Стили для кнопки */
-  .contact-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
-    width: 20%;
-    margin-right: 4vw;
-  }
-  
-  .contact-button .circle {
-    width: 12px;
-    height: 12px;
-    background-color: rgb(240, 230, 230);
-    border-radius: 50%;
-  }
-  
-  .contact-button button {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(240, 230, 230);
-    background-color: transparent;
-    border: 2px solid rgb(240, 230, 230);
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .contact-button button:hover {
-    background-color: rgb(240, 230, 230);
-    color: rgb(12, 11, 11);
-  }
-  
-  /* Ссылки на кнопке */
-  .contact-button a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .contact-button a:hover {
-    color: black;
-  }
-  
-  /* Отступ между хедером и контентом */
-  body {
-    padding-top: 10vh;  /* Увеличиваем отступ для страницы в vh */
-  }
-  
-  /* Контент */
-  main {
-    margin-top: 10vh; /* Отступ сверху, чтобы контент не перекрывался */
-  }
-  
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    .head {
+}
+
+.head.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Логотип */
+.logotype {
+  margin-top: 1vh;
+  flex: 1;
+  width: 100%;
+  height: 9vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(1.5);
+  background-image: url('./imagen.png');
+}
+
+.logotype-n {
+  margin-left: 1vw;
+}
+
+.logotype-n a {
+  text-decoration: none;
+}
+
+.logotype-n p {
+  filter: brightness(1.5);
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-family: 'Druk Trial', sans-serif;
+}
+
+/* Навигация */
+.ul-elements {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.links-components {
+  display: flex;
+  margin-right: 4vw;
+  list-style: none;
+  padding-inline-start: 0;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-components li {
+  margin: 2vh;
+  font-weight: 300;
+}
+
+.links-components li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.links-components li a:hover {
+  color: silver;
+}
+
+/* Стили для кнопки */
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 20%;
+  margin-right: 4vw;
+}
+
+.contact-button .circle {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.contact-button button {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-button button:hover {
+  background-color: rgb(240, 230, 230);
+  color: rgb(12, 11, 11);
+}
+
+/* Ссылки на кнопке */
+.contact-button a {
+  text-decoration: none;
+  color:black;
+}
+
+.contact-button a:hover {
+  color:silver;
+}
+
+/* Отступ между хедером и контентом */
+body {
+  padding-top: 0; /* Убираем отступ сверху */
+}
+
+/* Контент */
+main {
+  margin-top: 10vh;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .head {
       flex-direction: column;
-      padding: 5vh 0; /* Уменьшаем отступы хедера для мобильных */
-    }
-  
-    .logotype-n p {
+      padding: 5vh 0; 
+  }
+
+  .logotype-n p {
       font-size: 18px;
-    }
-  
-    .contact-button {
+  }
+
+  .contact-button {
       margin-right: 0;
       justify-content: center;
-    }
-  
-    body {
-      padding-top: 8vh;  /* Немного уменьшаем отступ для мобильных */
-    }
   }
-  
+
+  body {
+      padding-top: 0;  /* Убираем отступ для мобильных устройств */
+  }
+}

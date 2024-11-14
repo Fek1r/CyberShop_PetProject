@@ -6,6 +6,7 @@ import NewJau from './new-jau/new-jau';
 import Contact from './contact/contact';
 import Projects from './project/Projects.jsx';
 import Footer from './footer/footer.jsx'; 
+import Location from './location/location.jsx';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<About />} />
+        <Route path='/location' element={<Location />} />
       </Routes>
     </Router>
   );

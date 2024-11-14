@@ -1,16 +1,19 @@
 .projects-section {
-    background-color: #000;
-    padding: 40px;
+    background-color: #F2F2F2;
+    margin-top: 0;
+    height: 100%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 .project-item {
+    margin-top:15vh;
     display: flex;
-    align-items: stretch; /* Stretch items to be the same height */
+    align-items: stretch; /* Располагаем элементы одинаковой высоты */
     color: #fff;
-    gap: 10px; /* Small gap between image and text area */
+    gap: 20px;
 }
 
 .project-item.left {
@@ -23,59 +26,59 @@
 
 .project-image-container {
     width: 50%;
-    height: 100%;
+    height: 100%; /* Высота контейнера изображения зависит от высоты контейнера информации */
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0; /* Remove padding for consistent sizing */
+    padding: 0;
 }
 
 .project-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers its container without distortion */
+    object-fit: cover; /* Изображение будет покрывать контейнер без искажений */
     border-radius: 8px;
 }
 
 .project-info {
     width: 50%;
-    padding: 20px;
-    background-color:#1a1a1a; /* Matching the color from your design */
-    color: #fff;
-    text-align: left; /* Align text to the left */
+    height: 100%; /* Обеспечиваем, чтобы высота контейнера информации была равна высоте изображения */
+    padding: 40px;
+    background-color: white;
+    color: black;
+    text-align: left;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
-    /* Removed align-items: center; */
+    justify-content: flex-start;
 }
 
 .project-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    width: 100%; /* Ensure title is left-aligned */
+    margin-top: 0vh;
+    font-size: 3.9rem;
+    margin-bottom: 15px;
+    font-family: 'Druk Trial', sans-serif;
 }
 
 .project-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
-    width: 100%; /* Ensure description is left-aligned */
+    width: 100%;
 }
 
 .project-button {
-    margin-top: auto; /* Pushes button to the bottom of the container */
-    align-self: flex-start; /* Align button to the left */
-    padding: 10px 20px;
-    color: #fff;
-    font-weight: 400;
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 20px;
+    color: black;
+    font-weight: 700;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease;
-    border-radius: 5px;
+    font-size: 1.5rem;
 }
 
 .project-button:hover {
-    transform: scale(1.2); 
+    transform: scale(1.25);
 }
