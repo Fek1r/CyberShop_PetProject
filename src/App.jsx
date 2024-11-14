@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Head from './head/head.jsx';
+import Header from './header/header.jsx';
 import Home from './home/home.jsx';
 import About from './about/about.jsx';
 import NewJau from './new-jau/new-jau';
@@ -11,7 +11,7 @@ import Footer from './footer/footer.jsx';
 function App() {
   return (
     <Router>
-      <Head />  {/* Компонент Header, если он нужен */}
+      <Header />  {/* Компонент Header, если он нужен */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Главная страница */}
         <Route path="/new-jau" element={<NewJau />} /> {/* Страница для NewJau */}
