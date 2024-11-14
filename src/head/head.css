@@ -1,12 +1,13 @@
 /* Сброс и базовые стили */
 body, html {
-    margin-bottom: 2vh;
+    margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
     height: 100%;  /* Гарантирует, что body займет всю высоту экрана */
+    box-sizing: border-box; /* Учитываем отступы и бордеры при расчете ширины */
   }
   
-  /* Фиксированный хедер */
+  /* Хедер (фиксированный) */
   .head {
     width: 100%;
     height: auto;
@@ -14,12 +15,26 @@ body, html {
     align-items: center;
     background-color: transparent;  /* Изначально прозрачный */
     position: fixed;  /* Фиксированное позиционирование */
-    top: 0;
+    top: -100px;  /* Изначально хедер скрыт за пределами экрана */
     left: 0;
     right: 0;
-    padding: vh 5;  /* Отступы хедера в vh */
-    transition: background-color 0.3s ease; /* Плавный переход цвета */
+      /* Отступы хедера в vh и vw для точной подгонки */
+    transition: background-color 0.3s ease, top 0.5s ease; /* Плавный переход фона и положения */
     z-index: 1000; /* Хедер поверх всего контента */
+    opacity: 0;  /* Изначально скрытый */
+    animation: slideIn 0.5s forwards;  /* Плавное появление хедера */
+  }
+  
+  /* Анимация для плавного появления */
+  @keyframes slideIn {
+    0% {
+      top: -100px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
   }
   
   .head.scrolled {
