@@ -1,9 +1,10 @@
 /* Full page black background */
 .about-us-page {
     background-color: #000;
-    height: 100vh;
+    height: 125vh;
     justify-content: center;
     align-items: center;
+    margin-top:3vh;
     padding: 20px;
 }
 

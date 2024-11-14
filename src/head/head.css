@@ -1,96 +1,114 @@
-.head{
+/* Сброс и базовые стили */
+body, html {
+    margin-bottom: 2vh;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    height: 100%;  /* Гарантирует, что body займет всю высоту экрана */
+  }
+  
+  /* Фиксированный хедер */
+  .head {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
-    z-index: 1;
-}
-
-.logotype{
+    background-color: transparent;  /* Изначально прозрачный */
+    position: fixed;  /* Фиксированное позиционирование */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: vh 5;  /* Отступы хедера в vh */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+    z-index: 1000; /* Хедер поверх всего контента */
+  }
+  
+  .head.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);  /* Темный фон при прокрутке */
+  }
+  
+  /* Логотип */
+  .logotype {
     margin-top: 1vh;
     flex: 1;
     width: 100%;
     height: 9vh;
-    background-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     filter: brightness(1.5);
     background-image: url('./imagen.png');
-    
-
-}
-.logotype-n{
-margin-left: 1vw;
-}
-
-.logotype-n a{
+  }
+  
+  .logotype-n {
+    margin-left: 1vw;
+  }
+  
+  .logotype-n a {
     text-decoration: none;
-    }
-.logotype-n p{
+  }
+  
+  .logotype-n p {
     filter: brightness(1.5);
-    margin-block-start: 0;
-    color: rgb(240, 230, 230); 
-     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: rgb(240, 230, 230);
     font-weight: bold;
     font-size: 22px;
     text-align: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-
-}
-    
-.ul-elements{
-    width: 60%;
-    text-align: center;
+  }
+  
+  /* Навигация */
+  .ul-elements {
+    flex-grow: 1;
+    display: flex;
     justify-content: center;
-}
-
-
-.links-components{
+  }
+  
+  .links-components {
     display: flex;
     margin-right: 4vw;
     list-style: none;
     padding-inline-start: 0;
     width: auto;
     justify-content: center;
-    align-items: center;  
-}
-
-.links-components li {
-    filter: brightness(5);
+    align-items: center;
+  }
+  
+  .links-components li {
     margin: 2vh;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
-
-}
-
-.links-components li a {
+  }
+  
+  .links-components li a {
     text-decoration: none;
-    color: rgb(223, 211, 211); 
+    color: rgb(223, 211, 211);
     text-transform: uppercase;
-}
-
-.contact-button {
+    font-size: 16px;
+  }
+  
+  .links-components li a:hover {
+    color: rgb(255, 255, 255); /* Белый цвет при наведении */
+  }
+  
+  /* Стили для кнопки */
+  .contact-button {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 8px;
     width: 20%;
     margin-right: 4vw;
-}
-
-.contact-button .circle {
+  }
+  
+  .contact-button .circle {
     width: 12px;
-
     height: 12px;
     background-color: rgb(240, 230, 230);
     border-radius: 50%;
-}
-
-.contact-button button {
-    font-family: "Montserrat", sans-serif;
+  }
+  
+  .contact-button button {
     font-size: 16px;
     font-weight: bold;
     color: rgb(240, 230, 230);
@@ -100,20 +118,51 @@ margin-left: 1vw;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.contact-button button:hover {
+  }
+  
+  .contact-button button:hover {
     background-color: rgb(240, 230, 230);
     color: rgb(12, 11, 11);
-}
-
-.contact-button a{
+  }
+  
+  /* Ссылки на кнопке */
+  .contact-button a {
     text-decoration: none;
     color: white;
-}
-
-
-.contact-button a:hover{
+  }
+  
+  .contact-button a:hover {
     color: black;
-}
-
+  }
+  
+  /* Отступ между хедером и контентом */
+  body {
+    padding-top: 10vh;  /* Увеличиваем отступ для страницы в vh */
+  }
+  
+  /* Контент */
+  main {
+    margin-top: 10vh; /* Отступ сверху, чтобы контент не перекрывался */
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .head {
+      flex-direction: column;
+      padding: 5vh 0; /* Уменьшаем отступы хедера для мобильных */
+    }
+  
+    .logotype-n p {
+      font-size: 18px;
+    }
+  
+    .contact-button {
+      margin-right: 0;
+      justify-content: center;
+    }
+  
+    body {
+      padding-top: 8vh;  /* Немного уменьшаем отступ для мобильных */
+    }
+  }
+  
