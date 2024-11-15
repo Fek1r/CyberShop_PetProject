@@ -1,85 +1,111 @@
-.home {
-    margin-top: auto;
-    position: relative;
-    width: 100%;
-}
-
-.main-info {
-    width: 100%;
+/* Общие стили для раздела Home */
+.home-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color:white;
+    gap: 50px;
+    background-color: white;
 }
 
-.home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
+/* Стили для фонового блока */
+.home-background {
+    position: relative;
+    background: url('homepage.png') no-repeat center center/cover;
+    width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    
-    pointer-events: none;
-  }
-
-  .home::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100vh;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    
-    pointer-events: none;
-  }
-
-.main-info h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: azure;
-    line-height: 1.4;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.main-info button {
-    background: linear-gradient(to right, #67b26f, #4ca2cd);
+    display: flex;
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    align-items: flex-start;  /* Выравнивание по верхнему краю */
+    padding: 20px;  /* Немного отступа от краев */
     color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 20px;
+    font-family: 'Druk Trial', sans-serif;
+    animation: fadeInBackground 1.5s ease forwards; /* Плавное появление фона */
 }
 
-.main-info button p {
-    margin: 0;
+/* Анимация для фона */
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Контейнер для текста */
+.home-text-container {
+    max-width: 600px;  /* Ограничиваем ширину текста */
+}
+
+/* Стили для заголовка и текста */
+.home-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-top:40%;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Тень для текста */
+}
+
+.home-description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Тень для текста */
+}
+
+/* Стили для раздела About Us */
+.about-us-section {
+    background-color: white;  /* Белый фон для About Us */
+    padding: 40px;
     text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    animation: fadeInUp 1s ease-in-out; /* Плавное появление раздела */
 }
 
-.main-info button:hover {
-    background: linear-gradient(to right, #4ca2cd, #67b26f);
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Анимация появления раздела */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.main-info button:focus {
-    outline: none;
+.about-us-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.main-info button:active {
-    transform: scale(0.98);
+.about-us-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .home-description {
+        font-size: 1rem;
+    }
+
+    .about-us-title {
+        font-size: 2rem;
+    }
+
+    .about-us-text {
+        font-size: 1rem;
+    }
 }

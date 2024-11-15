@@ -21,20 +21,17 @@
     background-color: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    opacity: 0;
-    transform: translateY(20px); /* Исходное положение для анимации появления */
+    transform: translateY(0); /* Начальная позиция без смещения */
     animation: fadeInUp 1s ease forwards; /* Анимация появления секций */
 }
 
 /* Плавная анимация появления секций */
 @keyframes fadeInUp {
     0% {
-        opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px); /* Смещение вниз */
     }
     100% {
-        opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* Плавное возвращение в нормальное положение */
     }
 }
 
@@ -57,12 +54,10 @@
 /* Анимация появления контента слева */
 @keyframes fadeInLeft {
     0% {
-        opacity: 0;
-        transform: translateX(-20px);
+        transform: translateX(-50px); /* Смещение слева */
     }
     100% {
-        opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0); /* Плавное возвращение в нормальное положение */
     }
 }
 
@@ -97,12 +92,10 @@
 /* Параллакс-эффект при прокрутке */
 @keyframes fadeInRight {
     0% {
-        opacity: 0;
-        transform: translateX(20px);
+        transform: translateX(20px); /* Смещение вправо */
     }
     100% {
-        opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0); /* Плавное возвращение в нормальное положение */
     }
 }
 

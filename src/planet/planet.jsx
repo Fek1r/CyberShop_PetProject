@@ -2,6 +2,7 @@ import React from 'react';
 import './planet.css'; // Подключение стилей
 import solarParkImage from './image1.jpg';
 import Footer from '../footer/footer'; // Подключение изображения солнечного парка
+import MapComponent from '../location/location';
 
 const Planet = () => {
     return (

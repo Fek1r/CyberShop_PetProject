@@ -39,7 +39,7 @@
 }
 
 .logo-image-n {
-    height: 15vh;
+    height: 12vh;
     background-position: center;
     background-size: contain;    /* Ensures the entire image is visible within the container */
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     font-size: medium;
     font-weight: 500;
     list-style: none;
-    margin: 0 20px;
+    margin: 0 10px;
 
 }
 
@@ -86,8 +86,8 @@
     font-family: 'Druk Text Trial', sans-serif;
     background: transparent;
     color: white;
-    border: 1px solid white;     
-    padding: 8px 16px;            
+    border: 1px solid black;     
+    padding: 6px 16px;            
     font-size: medium;
     cursor: pointer;
     font-weight: 500;
