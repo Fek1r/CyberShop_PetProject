@@ -1,33 +1,53 @@
-import './home.css';
 import Footer from '../footer/footer';
 import React from 'react';
-import './homepage.png';  // Ваше изображение фона
+import './home.css';
 
-const HomePage = () => {
+function HomePage() {
   return (
     <div className="home-section">
-      {/* Фоновая картинка для страницы */}
+      {/* Home Background Text */}
       <div className="home-background">
-        <div>
-          <h1 className="home-title">Welcome to Our Website!</h1>
+        <div className="home-text-container">
+          <h1 className="home-title">Welcome to Baltic Park</h1>
           <p className="home-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel augue at risus venenatis consequat. Curabitur sit amet cursus lectus. Vivamus varius eu erat a tempor.
+            Experience a new era of innovation, sustainability, and dynamic industrial spaces. Discover the perfect environment for growth and success.
           </p>
         </div>
       </div>
 
-      {/* Раздел About Us */}
-      <div className="about-us-section">
-        <h2 className="about-us-title">About Us</h2>
-        <p className="about-us-text">
-          We are a dedicated team of professionals committed to providing the best services to our clients. Our mission is to create innovative solutions that meet the needs of our customers.
-        </p>
+      {/* About Us Section */}
+      <div className="about-us-page">
+        <div className="about-us-background">
+          <h2 className="about-us-title">ABOUT US</h2>
+          <p className="about-us-subtitle">Innovation starts with Baltic Park</p>
+          
+          <div className="about-us-block">
+            <div className="about-us-item">
+              <h3 className="about-us-item-title">Our Mission</h3>
+              <p className="about-us-item-text">
+                We revolutionize the industrial space, setting new standards in sustainability and growth.
+              </p>
+            </div>
+            <div className="about-us-item">
+              <h3 className="about-us-item-title">Our Vision</h3>
+              <p className="about-us-item-text">
+                Building a future-driven park for dynamic multinational tenants focused on ESG values.
+              </p>
+            </div>
+            <div className="about-us-item">
+              <h3 className="about-us-item-title">Our Commitment</h3>
+              <p className="about-us-item-text">
+                Embracing professionalism, innovation, and collaboration in everything we do.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Добавляем Footer компонент */}
+      {/* Footer Section */}
       <Footer />
     </div>
   );
-};
+}
 
 export default HomePage;

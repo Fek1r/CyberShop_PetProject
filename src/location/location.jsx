@@ -10,8 +10,8 @@ const MapComponent = () => {
   };
 
   const center = {
-    lat: 40.7128, // Latitude of New York
-    lng: -74.0060, // Longitude of New York
+    lat: 56.946,   // Latitude of Riga
+    lng: 24.1059,  // Longitude of Riga
   };
 
   return (
