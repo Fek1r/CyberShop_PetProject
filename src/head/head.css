@@ -82,7 +82,7 @@ body, html {
 
 .links-components {
   display: flex;
-  margin-right: 4vw;
+  margin-right: 10vw;
   list-style: none;
   padding-inline-start: 0;
   width: auto;

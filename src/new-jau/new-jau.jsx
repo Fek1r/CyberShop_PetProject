@@ -9,41 +9,41 @@ import Image6 from './l6.jpg';
 import Footer from '../footer/footer';
 
 const NewsSection = () => {
-    // Массив новостей
+    // Array of news items
     const newsItems = [
         {
-            title: "Park Aptauja",
-            description: "Mēs atgriežamies ar Baltic Industrial Park nomnieku aptauju, un mēs vēlamies jūsu atsauksmes par visiem pasākumiem un aktivitātēm!",
+            title: "Park Survey",
+            description: "We are back with the Baltic Industrial Park tenant survey, and we want your feedback on all events and activities!",
             image: Image1,
             link: "#"
         },
         {
-            title: "Votfordas biznesa solījums",
-            description: "Votfordas biznesa solījums atzīst uzņēmumus Votfordā, kas apņemas veikt sociāli atbildīgu darbību piecus galvenos virzienos: stipras nodarbinātības prakses...",
+            title: "Watford Business Pledge",
+            description: "The Watford Business Pledge recognizes businesses in Watford that commit to socially responsible action in five key areas: strong employment practices...",
             image: Image2,
             link: "#"
         },
         {
-            title: "Ilgtspējas ziņojums",
-            description: "Mūsu ikgadējais ilgtspējas ziņojums ir klāt! Lasiet par mūsu apņemšanos īstenot zaļākas prakses un to, kā mēs veicam izmaiņas.",
+            title: "Sustainability Report",
+            description: "Our annual sustainability report is here! Read about our commitment to greener practices and how we are making a difference.",
             image: Image3,
             link: "#"
         },
         {
-            title: "Darbinieku labklājības programma",
-            description: "Atklājiet mūsu jaunākās labklājības programmas, kas paredzētas, lai atbalstītu darbinieku veselību un laimi.",
+            title: "Employee Wellbeing Program",
+            description: "Discover our latest wellbeing programs designed to support employee health and happiness.",
             image: Image4,
             link: "#"
         },
         {
-            title: "Jaunā tehnoloģiju platforma",
-            description: "Mēs esam izstrādājuši jaunu platformu, kas ļauj uzņēmumiem ātrāk piekļūt jaunākajām tehnoloģijām un uzlabot savus darba procesus.",
+            title: "New Technology Platform",
+            description: "We have developed a new platform that enables businesses to access the latest technologies faster and improve their workflows.",
             image: Image5,
             link: "#"
         },
         {
-            title: "Korporatīvā sociālā atbildība",
-            description: "Izpētiet, kā mūsu uzņēmums veicina pozitīvas izmaiņas sabiedrībā, atbalstot vietējās kopienas un ekoloģiskos projektus.",
+            title: "Corporate Social Responsibility",
+            description: "Explore how our company is driving positive changes in society by supporting local communities and ecological projects.",
             image: Image6,
             link: "#"
         }
@@ -51,13 +51,13 @@ const NewsSection = () => {
 
     return (
         <div className="news-section">
-            {/* Перебор элементов массива newsItems */}
+            {/* Iterating through the newsItems array */}
             {newsItems.map((news, index) => (
                 <div key={index} className="news-item">
                     <img src={news.image} alt={news.title} className="news-image" />
                     <h3 className="news-title">{news.title}</h3>
                     <p className="news-description">{news.description}</p>
-                    <a href={news.link} className="news-link">Lasīt vairāk</a>
+                    <a href={news.link} className="news-link">Read More</a>
                 </div>
             ))}
             

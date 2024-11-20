@@ -2,11 +2,13 @@
 .projects-section {
     background-color: #F2F2F2;
     padding-top: 15vh !important;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     animation: fadeIn 1s ease-in-out; /* Плавное появление раздела */
+}
+.footer{
+    padding-bottom:0 !important;
 }
 
 /* Анимация для плавного появления всей секции */
@@ -121,8 +123,7 @@
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease;
     font-size: 1.5rem;
-    background-color: #e0e0e0;
-    border-radius: 5px;
+    font-family: 'Druk Trial', sans-serif;
 }
 
 /* Эффект при наведении на кнопку */

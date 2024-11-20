@@ -2,14 +2,13 @@
 .contact {
     background-color: white;
     padding-top: 15vh !important; /* Черный фон */
-    padding: 2rem;
-    margin-top: 3vh;
     position: relative;
     overflow: hidden;
 }
 
 /* Заголовок блока */
 .contact-title {
+    margin-top: 3vh;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;

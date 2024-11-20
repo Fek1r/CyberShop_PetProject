@@ -3,7 +3,6 @@
     background-color: #FFFFFF; /* Белый фон */
     color: #000000; /* Черный текст */
     padding-top: 15vh !important;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

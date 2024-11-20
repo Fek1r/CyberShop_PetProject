@@ -9,21 +9,21 @@ const Projects = () => {
     const projectsData = [
         {
             title: "PROJECT NAME",
-            description:"Testa teksts:Baltic Industrial Park.",
+            description: "Sample text: Baltic Industrial Park.",
             image: projectImage1,
             link: "#",
             align: "right"
         },
         {
             title: "PROJECT NAME",
-            description: "Testa teksts:Baltic Industrial Park.",
+            description: "Sample text: Baltic Industrial Park.",
             image: projectImage2,
             link: "#",
             align: "left"
         },
         {
             title: "PROJECT NAME",
-            description: "Testa teksts:Baltic Industrial Park.",
+            description: "Sample text: Baltic Industrial Park.",
             image: projectImage3,
             link: "#",
             align: "right"
@@ -40,11 +40,11 @@ const Projects = () => {
                     <div className="project-info">
                         <h3 className="project-title">{project.title}</h3>
                         <p className="project-description">{project.description}</p>
-                        <a href={project.link} className="project-button">Apskatīt</a>
+                        <a href={project.link} className="project-button">Read more </a>
                     </div>
                 </div>
             ))}
-            <Footer/>
+            <Footer />
         </div>
     );
 };

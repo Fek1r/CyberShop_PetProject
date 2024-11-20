@@ -1,6 +1,5 @@
 /* Main container */
 .main-container {
-  padding: 20px;
   padding-top: 10vh; /* Space from the top */
   background-color: #f8f8f8;
   text-align: center;
@@ -53,7 +52,6 @@
 .day, .address {
   background-color: white;
   color: #333;
-  padding:-3px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
