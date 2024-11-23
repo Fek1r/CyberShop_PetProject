@@ -10,7 +10,7 @@
 /* Background Section with Overlay */
 .home-background {
     position: relative;
-    background-image: url('./homepage.png');
+    background-image: url('./biphome2.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -47,19 +47,19 @@
 
 /* Title Styling for Home with Improved Animation */
 .home-title {
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     font-weight: 700;
-    color: black;
-    margin-bottom: 15px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    color: white;
+    margin-bottom: 50vh;
+    letter-spacing: 3.5px;
+    margin-left:50vh;
     animation: fadeInDown 1s ease-in-out;
 }
 
 /* Subtitle Styling for Home with Light Font */
 .home-description {
     font-size: 1.4rem;
-    color: black;
+    color: white;
     font-weight: 300;
     line-height: 1.5;
     max-width: 700px;

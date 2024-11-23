@@ -8,9 +8,9 @@ function HomePage() {
       {/* Home Background Text */}
       <div className="home-background">
         <div className="home-text-container">
-          <h1 className="home-title">Welcome to Baltic Park</h1>
+          <h1 className="home-title"> Welcome to Baltic Industrial Park </h1>
           <p className="home-description">
-            Experience a new era of innovation, sustainability, and dynamic industrial spaces. Discover the perfect environment for growth and success.
+            
           </p>
         </div>
       </div>
