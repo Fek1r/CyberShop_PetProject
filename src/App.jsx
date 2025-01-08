@@ -2,14 +2,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './header/header.jsx';
 import Home from './home/home.jsx';
 import About from './about/about.jsx';
-import NewJau from './new-jau/new-jau';
-import Contact from './contact/contact';
+import NewJau from './new-jau/new-jau.jsx';
+import Contact from './contact/contact.jsx';
 import Projects from './project/Projects.jsx';
 import Footer from './footer/footer.jsx'; 
 import Location from './location/location.jsx';
 import Solutions from './solution/solution.jsx'
 import Park from './park/park.jsx'
 import Planet from './planet/planet.jsx'
+import Buy from './buy/buy.jsx'
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Route path='/solution' element={<Solutions />} />
         <Route path='/park' element={<Park />} />
         <Route path='/planet' element={<Planet />} />
+        <Route path='/buy' element={<Buy />} />
+
       </Routes>
     </Router>
   );

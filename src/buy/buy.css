@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+
+
+.buy-container {
+    margin-top: 15vh;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buy-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  
+  .buy-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 3vh;
+    color:white;
+   
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    margin-top:3vh;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color:  #1d2327;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10vh;
+  }
+  
+  .submit-button:hover {
+    background-color:  #1d2327;
+  }
+  

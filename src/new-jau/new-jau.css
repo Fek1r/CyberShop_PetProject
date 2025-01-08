@@ -1,7 +1,7 @@
 /* Общие стили для всего раздела */
 .news-section {
-    background-color: #F2F2F2;
-    color: #fff;
+    background-color: black;
+    color: black;
     padding-top: 15vh; /* Отступ сверху, чтобы контент был ниже хедера */
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@
 
 /* Стили для каждого элемента новости */
 .news-item {
-    background-color: #fff;
+    background-color:  #1d2327;
     border-radius: 8px;
     padding: 30px;
     margin: 15px;
@@ -64,7 +64,7 @@
     align-items: center;
     width: 125px;
     height: 40px;
-    color: black;
+    color: white;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -96,7 +96,7 @@
 /* Заголовок новости */
 .news-title {
     font-size: 1.2rem;
-    color: black;
+    color: white;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: left;
@@ -105,7 +105,7 @@
 /* Описание новости */
 .news-description {
     font-size: 0.9rem;
-    color: black;
+    color: white;
     margin-bottom: 15px;
     text-align: left;
 }

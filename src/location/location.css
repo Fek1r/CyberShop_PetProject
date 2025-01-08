@@ -1,14 +1,14 @@
 /* Main container */
 .main-container {
   padding-top: 10vh; /* Space from the top */
-  background-color: #f8f8f8;
+  background-color: black;
   text-align: center;
 }
 
 /* Title at the top of the page */
 .page-name {
   font-size: 2rem;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -23,7 +23,7 @@
 /* Left container for days of the week */
 .time-work {
   flex: 1;
-  background-color: white;
+  background-color: black;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -36,7 +36,7 @@
 /* Work time title */
 .work {
   font-size: 1.5rem;
-  color: #555;
+  color: white;
   margin-top:0;
   margin-bottom: 10px;
 }
@@ -50,9 +50,9 @@
 
 /* Individual day blocks */
 .day, .address {
-  background-color: white;
-  color: #333;
-  border: 1px solid #ddd;
+  background-color:  #1d2327;
+  color: white;
+  border: 1px solid white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
   font-size: 1.1rem;

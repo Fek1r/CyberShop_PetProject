@@ -1,5 +1,5 @@
 .footer {
-    background-color: #eaeaea; /* Light background */
+    background-color: black; /* Light background */
     color: black; /* Black text color */
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     padding-top: 10px;
-    color: black; /* Black header text */
+    color: white; /* Black header text */
   }
   
   .footer-section ul {
@@ -30,7 +30,7 @@
   }
   
   .footer-link {
-    color: black; /* Black link color */
+    color: white; /* Black link color */
     text-decoration: none; /* Remove underline */
   }
   
@@ -43,8 +43,8 @@
     text-align: center;
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid black;
+    border-top: 1px solid white;
     font-size: 0.9rem;
-    color: black;
+    color: white;
   }
   

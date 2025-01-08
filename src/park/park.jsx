@@ -9,9 +9,6 @@ const Park = () => {
             <Section title="History" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." image={Image1} />
             <Section title="Key Facts" text="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices." image={Image1} />
             <Section title="Why Utilities?" text="Mauris gravida lacus id suscipit tincidunt. Vivamus euismod." image={Image1} />
-            <Section title="Masterplan" text="Sed consectetur erat vitae nisi tristique, eu varius enim aliquam." image={Image1} />
-            <Section title="Location" text="Donec vel urna ut leo consequat dictum. Duis fermentum." image={Image1} />
-            <Section title="Connections" text="Nulla sit amet dolor et risus tincidunt egestas. Integer fringilla." image={Image1} />
             <Footer/>
         </div>
     );

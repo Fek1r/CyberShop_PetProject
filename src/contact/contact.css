@@ -1,6 +1,6 @@
 /* Основной контейнер */
 .contact {
-    background-color: white;
+    background-color: black;
     padding-top: 15vh !important; /* Черный фон */
     position: relative;
     overflow: hidden;
@@ -57,7 +57,7 @@
 /* Информация об агенте */
 .agent-info {
     margin-top: 3vh;
-    color: black; /* Цвет для контактов */
+    color: white; /* Цвет для контактов */
 }
 
 /* Имя агента */
@@ -70,13 +70,13 @@
 /* Телефон и email */
 .agent-phone, .agent-email {
     font-size: 0.9rem;
-    color: black; /* Цвет для контактов */
+    color:white; /* Цвет для контактов */
     margin: 0;
 }
 
 /* Раздел On-site */
 .on-site {
-    border-top: 1px solid black; /* Разделительная линия сверху */
+    border-top: 1px white; /* Разделительная линия сверху */
     padding-top: 2rem;
     margin-top: 2rem;
     opacity: 0;
@@ -89,7 +89,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #333;
+    color:white;
+    margin-left:8vh;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-out forwards; /* Анимация для заголовка */
@@ -97,26 +98,30 @@
 
 /* Информация агента на месте */
 .on-site-agent-info {
-    color: #ccc; /* Цвет для контактов */
+    color: white; /* Цвет для контактов */
+    margin-left:4vh;
 }
 
 .on-site-agent-name {
     font-size: 1.25rem;
     font-weight: bold;
+    margin-left:4vh;
     margin-bottom: 0.3rem;
-    color: black;
+    color: white;
 }
 
 .on-site-agent-title {
     margin-top: 3vh;
     font-size: 1rem;
-    color: black;
+    margin-left:4vh;
+    color: white;
 }
 
 .on-site-agent-phone, .on-site-agent-email {
     font-size: 0.9rem;
     margin-top: 1vh;
-    color: black;
+    margin-left:4vh;
+    color: white;
 }
 
 /* Анимация для появления */

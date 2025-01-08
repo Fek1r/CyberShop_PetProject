@@ -47,7 +47,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <h3>CONNECT WITH US ON SOCIAL MEDIA</h3>
-        <p>© 2024 Baltic Industrial Park.</p>
+        <p>© 2024 PC Gaming Club.</p>
       </div>
     </footer>
   );

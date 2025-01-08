@@ -25,11 +25,11 @@ function Header() {
                 <ul className="link-container">
                     <li className="link-component"><Link to="/">HOME</Link></li>
                     <li className="link-component"><Link to="/project">PROJECTS</Link></li>
-                    <li className="link-component"> <Link to="/solution">SOLUTIONS</Link></li>
+                    <li className="link-component"><Link to="/solution">SOLUTIONS</Link></li>
                     <li className="link-component"><Link to="/new-jau">NEWS</Link></li>
-                    <li className="link-component"> <Link to="/park">THE PARK</Link></li>
-                    <li className="link-component"> <Link to="/planet">PLANET BALTICA</Link></li>
-                    <li className="link-component"> <Link to="/location">LOCATION</Link></li>
+                    <li className="link-component"><Link to="/park">CLUB</Link></li>
+                    <li className="link-component"><Link to="/planet">PLANET BALTICA</Link></li>
+                    <li className="link-component"><Link to="/location">LOCATION</Link></li>
                 </ul>
 
                 <div className="contact-container">

@@ -5,6 +5,7 @@ body, html {
   font-family: "Montserrat", sans-serif;
   height: 100%;
   box-sizing: border-box;
+  color: white; /* Устанавливаем белый цвет для всего текста */
 }
 
 /* Хедер (фиксированный) */
@@ -15,7 +16,7 @@ body, html {
   align-items: center;
   background-color: transparent;
   position: fixed;
-  top: 0; /* Убираем отступ сверху */
+  top: 0;
   left: 0;
   right: 0;
   transition: background-color 0.3s ease, top 0.5s ease;
@@ -24,20 +25,8 @@ body, html {
   animation: slideIn 0.5s forwards;
 }
 
-/* Анимация для плавного появления */
-@keyframes slideIn {
-  0% {
-      top: -100px;
-      opacity: 0;
-  }
-  100% {
-      top: 0;
-      opacity: 1;
-  }
-}
-
 .head.scrolled {
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Логотип */
@@ -59,12 +48,13 @@ body, html {
 
 .logotype-n a {
   text-decoration: none;
+  color: white; /* Устанавливаем цвет ссылки */
 }
 
 .logotype-n p {
   filter: brightness(1.5);
   margin: 0;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 22px;
   text-align: center;
@@ -93,17 +83,18 @@ body, html {
 .links-components li {
   margin: 2vh;
   font-weight: 300;
+  color: white; /* Белый цвет для элементов списка */
 }
 
-.links-components li a {
+.links-components a {
   text-decoration: none;
-  color: black;
+  color: white !important;
   text-transform: uppercase;
   font-size: 16px;
 }
 
 .links-components li a:hover {
-  color: silver;
+  color: white;
 }
 
 /* Стили для кнопки */
@@ -119,16 +110,16 @@ body, html {
 .contact-button .circle {
   width: 12px;
   height: 12px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
 }
 
 .contact-button button {
   font-size: 16px;
   font-weight: bold;
-  color: black;
+  color: white !important;
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
@@ -143,16 +134,16 @@ body, html {
 /* Ссылки на кнопке */
 .contact-button a {
   text-decoration: none;
-  color:black;
+  color: white !important;
 }
 
 .contact-button a:hover {
-  color:silver;
+  color: silver;
 }
 
 /* Отступ между хедером и контентом */
 body {
-  padding-top: 0; /* Убираем отступ сверху */
+  padding-top: 0;
 }
 
 /* Контент */
@@ -177,6 +168,6 @@ main {
   }
 
   body {
-      padding-top: 0;  /* Убираем отступ для мобильных устройств */
+      padding-top: 0;
   }
 }

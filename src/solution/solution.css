@@ -1,7 +1,7 @@
 /* Общие стили для всего раздела Solutions */
 .solutions-section {
-    background-color: #FFFFFF; /* Белый фон */
-    color: #000000; /* Черный текст */
+    background-color: black; /* Белый фон */
+    color: white; /* Черный текст */
     padding-top: 15vh !important;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: white;
 }
 
 /* Описание */
@@ -58,7 +58,7 @@
     line-height: 1.6;
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
-    color: #555;
+    color: white;
 }
 
 /* Контейнер для изображения */

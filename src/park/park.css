@@ -1,24 +1,26 @@
 /* Общие стили для всего раздела */
 .park-section {
-    background-color: white;
+    background-color: black;
     padding-top: 15vh !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 50px;
     animation: fadeIn 1s ease-in-out; /* Плавное появление всего раздела */
 }
 
 /* Стили для каждой секции */
 .section {
+    width: 90%;
+    margin-left: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px white;
     gap: 30px;
     position: relative;
-    background-color: #f9f9f9;
+    background-color:  #1d2327;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transform: translateY(0); /* Начальная позиция без смещения */
@@ -64,7 +66,7 @@
 .section-title {
     font-size: 2.8rem;
     font-family: 'Druk Trial', sans-serif;
-    color: #333;
+    color: white;
     margin-bottom: 15px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -73,7 +75,7 @@
 .section-text {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #555;
+    color: white ;
     margin-bottom: 20px;
 }
 

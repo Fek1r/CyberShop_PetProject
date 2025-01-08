@@ -44,6 +44,7 @@
     background-size: contain;    /* Ensures the entire image is visible within the container */
     background-repeat: no-repeat;
     background-image: url('../head/image.png');
+    margin-left:-13vh;
 }
 
 .link-container {
@@ -67,12 +68,12 @@
 
 .link-component a {
     text-decoration: none;
-    color:black;
+    color:white;
 }
 
 .contact-container a  {
     text-decoration: none;
-    color:black;
+    color:white;
 }
 
 
@@ -87,7 +88,7 @@
     font-family: 'Druk Text Trial', sans-serif;
     background: transparent;
     color: white;
-    border: 1px solid black;     
+    border: 2px white;     
     padding: 6px 16px;            
     font-size: medium;
     cursor: pointer;
@@ -97,6 +98,6 @@
 }
 
 .contact-container button:hover {
-    background-color: white;      
-    color: black;               
+    background-color: silver;      
+    color: white;               
 }
