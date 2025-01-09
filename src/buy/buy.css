@@ -1,70 +1,121 @@
-body{
-    background-color: black;
+.buy-container {
+  margin-top: 15vh;
+  margin-left:2vh;
+  width: 95%;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buy-form {
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Заголовок */
+.buy-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Форма */
+.buy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Группа полей */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Метки */
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+/* Поля ввода и выпадающие списки */
+.form-group input,
+.form-group select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+/* Кнопка отправки */
+.submit-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #444;
+  border: 2px solid #888;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+  border-color: #fff;
+  color: #ffffff;
+}
+
+/* Футер */footer {
+  margin-top: 20px; /* Отступ от buy-container */
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 
-.buy-container {
-    margin-top: 15vh;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .buy-title {
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
+
+/* Добавить эффект при наведении на поля ввода */
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #fff;
+  background-color: #555;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Добавление адаптивности */
+@media (max-width: 768px) {
+  .buy-container {
+    margin-top: 10vh;
+    padding: 15px;
   }
 
-  
-  .buy-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  .buy-title {
+    font-size: 24px;
   }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group label {
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 3vh;
-    color:white;
-   
-  }
-  
+
   .form-group input,
   .form-group select {
+    font-size: 12px;
     padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
-  
+
   .submit-button {
-    margin-top:3vh;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color:  #1d2327;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 10vh;
+    font-size: 14px;
+    padding: 10px 15px;
   }
-  
-  .submit-button:hover {
-    background-color:  #1d2327;
-  }
-  
+}
