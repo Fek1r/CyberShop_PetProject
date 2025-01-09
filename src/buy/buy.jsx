@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./buy.css";
 import Footer from "../footer/footer";
@@ -11,11 +11,29 @@ function Buy() {
     orderType: "standard",
     orderTypeRoom: "apartment",
   });
+  const [availableTimes, setAvailableTimes] = useState([]);
+  const [selectedTime, setSelectedTime] = useState("");
+
+  const fetchAvailableTimes = async (orderTypeRoom) => {
+    try {
+      const response = await axios.get(`http://localhost:5002/available-times/${orderTypeRoom}`);
+      setAvailableTimes(response.data);
+    } catch (error) {
+      console.error("Error fetching available times:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchAvailableTimes(formData.orderTypeRoom);
+  }, [formData.orderTypeRoom]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5002/orders", formData);
+      const response = await axios.post("http://localhost:5002/orders", {
+        ...formData,
+        orderTime: selectedTime,
+      });
       console.log("Order submitted:", response.data);
     } catch (error) {
       console.error("Error submitting order:", error);
@@ -71,11 +89,31 @@ function Buy() {
           <select
             id="orderTypeRoom"
             value={formData.orderTypeRoom}
-            onChange={(e) => setFormData({ ...formData, orderTypeRoom: e.target.value })}
+            onChange={(e) => {
+              setFormData({ ...formData, orderTypeRoom: e.target.value });
+              setSelectedTime(""); // Reset time when room changes
+            }}
           >
             <option value="mon">Mon</option>
             <option value="tue">Tue</option>
             <option value="wed">Wed</option>
+          </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="orderTime">Time Slot</label>
+          <select
+            id="orderTime"
+            value={selectedTime}
+            onChange={(e) => setSelectedTime(e.target.value)}
+          >
+            <option value="" disabled>
+              Select a time slot
+            </option>
+            {availableTimes.map((time) => (
+              <option key={time} value={time}>
+                {time}
+              </option>
+            ))}
           </select>
         </div>
         <button type="submit" className="submit-button">
