@@ -41,7 +41,7 @@ const MapComponent = () => {
               <p>Sat/Sun: 10-17</p>
             </div>
             <div className='address'>
-              <p>Adres: --------</p>
+              <p>Adres: Meza iela 3,LV-1000</p>
             </div>
           </div>
         </div>

@@ -53,7 +53,6 @@ const Projects = () => {
             <p className="project-description">{project.description}</p>
             <div className="buy-link">
               <a href="/buy" className="buy-button">Buy</a>
-              <a href="/read-more" className="project-button">Read More</a>
             </div>
           </div>
         </div>

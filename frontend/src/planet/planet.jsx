@@ -38,10 +38,6 @@ const Planet = () => {
                 <div className="solar-park">
                     <img src={solarParkImage} alt="Solar Park" />
                 </div>
-
-                <a href="#" className="action-button">
-                    Learn More
-                </a>
             </div>
             <Footer/>
         </div>
