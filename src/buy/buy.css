@@ -3,7 +3,7 @@
   margin-left:2vh;
   width: 95%;
   padding: 20px;
-  background-color: black;
+  background-color: #1d2327;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -41,11 +41,13 @@
   font-weight: 600;
   margin-bottom: 5px;
   color: #ffffff;
+  margin-top:2vh;
 }
 
 /* Поля ввода и выпадающие списки */
 .form-group input,
 .form-group select {
+  margin-top:2vh;
   padding: 12px;
   font-size: 14px;
   border: 1px solid #666;
@@ -78,8 +80,9 @@
   color: #ffffff;
 }
 
-/* Футер */footer {
-  margin-top: 20px; /* Отступ от buy-container */
+footer {
+  margin-top: 20px;
+  width: 95% !important; /* Отступ от buy-container */
   background-color: black;
   color: white;
   text-align: center;
