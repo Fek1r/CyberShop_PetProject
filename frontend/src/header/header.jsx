@@ -28,7 +28,7 @@ function Header() {
                     <li className="link-component"><Link to="/solution">SOLUTIONS</Link></li>
                     <li className="link-component"><Link to="/new-jau">NEWS</Link></li>
                     <li className="link-component"><Link to="/game">GAME</Link></li>
-                    <li className="link-component"><Link to="/planet">PLANET BALTICA</Link></li>
+                    <li className="link-component"><Link to="/info">INFO</Link></li>
                     <li className="link-component"><Link to="/location">LOCATION</Link></li>
                 </ul>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './planet.css'; // Подключение стилей
+import './info.css'; // Подключение стилей
 import solarParkImage from './pc_image.jpg';
 import Footer from '../footer/footer'; // Подключение изображения солнечного парка
 import MapComponent from '../location/location';
@@ -9,7 +9,7 @@ const Planet = () => {
         <div className="planet-section">
             <div className="planet-background"></div>
             <div className="planet-content">
-                <h1 className="planet-title">PLANET BALTICA</h1>
+                <h1 className="planet-title">INFO</h1>
                 <p className="planet-description">
                     Our 5-year Vision is focused on transforming the future of sustainability. We're dedicated to enhancing the ESG (Environmental, Social, and Governance) roadmap through strategic initiatives like our state-of-the-art Solar Park and more.
                 </p>

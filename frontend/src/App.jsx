@@ -9,7 +9,7 @@ import Footer from './footer/footer.jsx';
 import Location from './location/location.jsx';
 import Solutions from './solution/solution.jsx'
 import Park from './game/game.jsx'
-import Planet from './planet/planet.jsx'
+import Planet from './info/info.jsx'
 import Buy from './buy/buy.jsx'
 
 
@@ -26,7 +26,7 @@ function App() {
         <Route path='/location' element={<Location />} />
         <Route path='/solution' element={<Solutions />} />
         <Route path='/game' element={<Park />} />
-        <Route path='/planet' element={<Planet />} />
+        <Route path='/info' element={<Planet />} />
         <Route path='/buy' element={<Buy />} />
 
       </Routes>
