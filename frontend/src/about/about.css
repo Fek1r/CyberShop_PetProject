@@ -1,0 +1,49 @@
+/* Full page black background */
+.about-us-page {
+    background-color: #000;
+    height: 125vh;
+    justify-content: center;
+    align-items: center;
+    margin-top:3vh;
+    padding: 20px;
+}
+
+
+/* Container with specific color and layout styling */
+.about-us-container {
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Logo styling */
+.about-us-logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 250px; /* Center the logo horizontally and add space below it */
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Title styling */
+.about-us-title {
+    margin-top:2vh;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* Text styling */
+.about-us-text {
+    margin-top:3vh;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}

@@ -1,0 +1,226 @@
+/* Общие стили для раздела проектов */
+.projects-section {
+    width:100%;
+    background-color:black;
+    padding-top: 15vh !important;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    animation: fadeIn 1s ease-in-out; /* Плавное появление раздела */
+}
+.footer{
+    padding-bottom:0 !important;
+}
+
+/* Анимация для плавного появления всей секции */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Стили для каждого проекта */
+.project-item {
+    display: flex;
+    width: 90%;
+    margin-left:8vh;
+    align-items: stretch;
+    gap: 20px;
+    opacity: 0; /* Начальная прозрачность для анимации */
+    transform: translateY(20px); /* Начальная позиция для анимации */
+    animation: fadeInUp 0.8s ease forwards; /* Анимация появления снизу */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Анимация появления проектов снизу */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили для левой стороны проекта */
+.project-item.left {
+    flex-direction: row;
+}
+
+/* Стили для правой стороны проекта */
+.project-item.right {
+    flex-direction: row-reverse;
+}
+
+/* Контейнер для изображения проекта */
+.project-image-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 8px;
+}
+
+/* Изображение проекта */
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Плавное увеличение изображения при наведении */
+}
+
+/* Эффект увеличения изображения при наведении */
+.project-item:hover .project-image {
+    transform: scale(1.1);
+}
+
+/* Контейнер для информации о проекте */
+.project-info {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    background-color:  #1d2327;
+    color: white;
+    text-align: left;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для контента */
+}
+
+/* Заголовок проекта */
+.project-title {
+    margin-top: 0;
+    font-size: 3.9rem;
+    margin-bottom: 15px;
+    font-family: 'Druk Trial', sans-serif;
+    color: white;
+}
+
+/* Описание проекта */
+.project-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 100%;
+    color: white;
+}
+
+/* Кнопка проекта */
+.project-button {
+    margin-top: auto;
+    align-self: flex-start;
+    background-color:  #1d2327;
+    padding: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    font-size: 1.5rem;
+    font-family: 'Druk Trial', sans-serif;
+}
+
+/* Эффект при наведении на кнопку */
+.project-button:hover {
+    transform: scale(1.25);
+    background-color:  #1d2327;
+}
+
+
+.buy-link {
+    display: flex;
+    gap: 20px; /* Отступ между кнопками */
+}
+
+/* Кнопка Buy */
+.buy-link .buy-button {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    font-size: 1.5rem;
+    font-family: 'Druk Trial', sans-serif;
+    border-radius: 8px; /* Углы как у кнопки Read More */
+    background-color: black; /* Белый фон как у Read More */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для кнопки */
+}
+
+/* Эффект при наведении на кнопку Buy */
+.buy-link .buy-button:hover {
+    transform: scale(1.25);
+    background-color: #d0d0d0;
+}
+
+/* Если нужно добавить визуальные эффекты для кнопки "Buy", то, например, можно задать уникальный цвет фона для этой кнопки */
+.buy-link .buy-button {
+    background-color:  #1d2327; /* Белый фон с лёгким оттенком */
+}
+
+/* Вставка кнопки Buy в section .projects-section */
+.projects-section .buy-link {
+    display: flex;
+    gap: 20px; /* Добавляем отступ между кнопками */
+    justify-content: flex-start; /* Кнопки выравниваются по левому краю */
+    margin-top: 20px; /* Немного отступа сверху для кнопок */
+}
+
+/* Для кнопки "Read More" */
+.project-item .project-button {
+    padding: 20px;
+    color: WHITE;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    font-size: 1.5rem;
+    font-family: 'Druk Trial', sans-serif;
+    border-radius: 8px;
+    background-color:  #1d2327;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для кнопки */
+}
+
+/* Добавление эффекта для кнопки "Read More" */
+.project-item .project-button:hover {
+    transform: scale(1.25);
+    background-color: #d0d0d0;
+}
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column; /* Проекты отображаются вертикально на мобильных */
+    }
+
+    .project-image-container {
+        width: 100%;
+        height: 300px; /* Ограничиваем высоту изображения на мобильных */
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 2.5rem; /* Уменьшаем размер заголовка на мобильных */
+    }
+
+    .project-description {
+        font-size: 1rem; /* Уменьшаем размер текста описания на мобильных */
+    }
+
+    .project-button {
+        font-size: 1.2rem; /* Уменьшаем размер кнопки на мобильных */
+    }
+
+    
+}

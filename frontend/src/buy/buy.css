@@ -1,0 +1,124 @@
+.buy-container {
+  margin-top: 15vh;
+  margin-left:2vh;
+  width: 95%;
+  padding: 20px;
+  background-color: #1d2327;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buy-form {
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Заголовок */
+.buy-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Форма */
+.buy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Группа полей */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Метки */
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+  margin-top:2vh;
+}
+
+/* Поля ввода и выпадающие списки */
+.form-group input,
+.form-group select {
+  margin-top:2vh;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+/* Кнопка отправки */
+.submit-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #444;
+  border: 2px solid #888;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+  border-color: #fff;
+  color: #ffffff;
+}
+
+footer {
+  margin-top: 20px;
+  width: 95% !important; /* Отступ от buy-container */
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* Добавить эффект при наведении на поля ввода */
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #fff;
+  background-color: #555;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Добавление адаптивности */
+@media (max-width: 768px) {
+  .buy-container {
+    margin-top: 10vh;
+    padding: 15px;
+  }
+
+  .buy-title {
+    font-size: 24px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
