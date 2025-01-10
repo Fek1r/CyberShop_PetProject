@@ -97,6 +97,9 @@ function Buy() {
             <option value="mon">Mon</option>
             <option value="tue">Tue</option>
             <option value="wed">Wed</option>
+            <option value="wed">Thu</option>
+            <option value="wed">Fri</option>
+            <option value="wed">Sat/Sun</option>
           </select>
         </div>
         <div className="form-group">
