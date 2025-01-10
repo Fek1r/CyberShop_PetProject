@@ -11,21 +11,21 @@ const Projects = () => {
   const projectsData = [
     {
       title: "VIP Room",
-      description: " VIP Room 3 Best PC and 2 PS5 ",
+      description: " Monitor: Samsung Odyssey (25) Full HD 240 Hz GPU: RTX 3060 TI 8 GBCPU: Intel Core i5−12400F ",
       image: projectImage1,
       link: "#",
       align: "right",
     },
     {
-      title: "For-1-PC-Player",
-      description: "1 top pc ",
+      title: "Game-zone",
+      description: "Monitor: HP OMEN (27) 240 Hz GPU: RTX 4070 12 GB CPU: Intel Core i5-12600K",
       image: projectImage2,
       link: "#",
       align: "left",
     },
     {
       title: "PS5",
-      description: "PS5 player place",
+      description: "PS5",
       image: projectImage3,
       link: "#",
       align: "right",
