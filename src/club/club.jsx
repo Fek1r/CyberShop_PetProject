@@ -1,5 +1,5 @@
 import React from 'react';
-import './park.css'; // Подключаем стили
+import './club.css'; // Подключаем стили
 import Image1 from './solo.jpg';
 import Image2 from'./plan_club.png';
 import Image3 from './vip_room.jpg';

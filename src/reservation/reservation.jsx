@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Добавляем импорт Link
-import "./Projects.css";
+import "./reservation.css";
 import Buy from "../buy/buy.jsx";
 import projectImage1 from "./vip_rom.jpg";
 import projectImage2 from "./solo.jpg";
