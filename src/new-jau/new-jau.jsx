@@ -1,11 +1,11 @@
 import React from 'react';
 import './new-jau.css';
-import Image1 from './l1.jpg';
-import Image2 from './l2.jpg';
-import Image3 from './l3.jpg';
-import Image4 from './l4.jpg';
-import Image5 from './l5.jpg';
-import Image6 from './l6.jpg';
+import Image1 from './club.jpeg';
+import Image2 from './pc_image.jpg';
+import Image3 from './plan_club.png';
+import Image4 from './PS5.jpg';
+import Image5 from './solo.jpg';
+import Image6 from './vip_room.jpg';
 import Footer from '../footer/footer';
 
 const NewsSection = () => {
