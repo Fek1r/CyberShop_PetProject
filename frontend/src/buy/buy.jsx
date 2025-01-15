@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import axios from "axios";
 import "./buy.css";
 import Footer from "../footer/footer";
@@ -53,6 +53,7 @@ function Buy() {
         startTime: selectedSlot.start,
         endTime: selectedSlot.end,
       });
+      console.log({response});
       console.log("Order submitted:", response.data);
       alert("Order successfully submitted!");
     } catch (error) {
