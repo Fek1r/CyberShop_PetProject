@@ -1,25 +1,26 @@
+/* Контейнер для оформления заказа */
 .buy-container {
-  margin-top: 15vh;
-  margin-left:2vh;
-  width: 95%;
-  padding: 20px;
-  background-color: #1d2327;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.buy-form {
+  margin-top: 12vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 30px;
+  background: #1d2327;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #ecf0f1;
+  display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
 }
 
 /* Заголовок */
 .buy-title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
-  color: #ffffff;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Форма */
@@ -27,6 +28,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Группа полей */
@@ -40,85 +43,149 @@
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #ffffff;
-  margin-top:2vh;
+  color: #ecf0f1;
 }
 
 /* Поля ввода и выпадающие списки */
 .form-group input,
 .form-group select {
-  margin-top:2vh;
-  padding: 12px;
-  font-size: 14px;
-  border: 1px solid #666;
-  border-radius: 5px;
-  background-color: #444;
-  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+              inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .form-group input::placeholder {
-  color: #bbb;
+  color: #95a5a6;
+}
+
+/* Анимация при фокусе */
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  background: linear-gradient(145deg, #34495e, #2c3e50);
+  box-shadow: 0 0 10px rgba(26, 188, 156, 0.6);
+  color: #ffffff;
+}
+
+/* Стили выпадающего списка (select) */
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ecf0f1' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
 }
 
 /* Кнопка отправки */
 .submit-button {
-  padding: 12px 25px;
+  padding: 15px 30px;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #444;
-  border: 2px solid #888;
+  color: #ecf0f1;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .submit-button:hover {
-  background-color: #555;
-  border-color: #fff;
-  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(26, 188, 156, 0.4);
 }
 
+.submit-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 10px rgba(26, 188, 156, 0.4);
+}
+
+/* Контейнер для доступных временных слотов */
+.available-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.available-times button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #ecf0f1;
+  background: linear-gradient(145deg, #1abc9c, #16a085);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.available-times button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(26, 188, 156, 0.4);
+}
+
+.available-times button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(26, 188, 156, 0.4);
+}
+
+.available-times button.selected {
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
+  color: #fff;
+}
+
+/* Footer */
 footer {
-  margin-top: 20px;
-  width: 95% !important; /* Отступ от buy-container */
-  background-color: black;
-  color: white;
-  text-align: center;
+  margin-top: 40px;
   padding: 20px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 15px 15px;
 }
 
-
-
-/* Добавить эффект при наведении на поля ввода */
-.form-group input:focus,
-.form-group select:focus {
-  outline: none;
-  border-color: #fff;
-  background-color: #555;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-/* Добавление адаптивности */
+footer a:hover {
+  color: #16a085;
+}
+
+/* Адаптивность */
 @media (max-width: 768px) {
   .buy-container {
-    margin-top: 10vh;
-    padding: 15px;
+    padding: 20px;
+    margin: 5vh 5vw;
   }
 
   .buy-title {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .form-group input,
   .form-group select {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
+  }
+
+  .available-times button {
+    padding: 8px 15px;
+    font-size: 12px;
   }
 
   .submit-button {
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 10px 20px;
   }
 }
