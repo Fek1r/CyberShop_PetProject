@@ -34,6 +34,7 @@ function Header() {
 
                 <div className="contact-container">
                     <button><Link to="/contact">CONTACT US</Link></button>
+                    <button><Link to="/login">Log In</Link></button>
                 </div>
               
             </div>
