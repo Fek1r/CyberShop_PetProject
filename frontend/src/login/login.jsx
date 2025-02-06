@@ -14,6 +14,7 @@ function Login() {
   };
 
   return (
+    <div className="returner-login">
     <div className="login-page">
       <div className="login-container">
         <h1 className="login-register-title">{t('register')}</h1>
@@ -69,6 +70,7 @@ function Login() {
           <button onClick={() => changeLanguage('en')} className={language === 'en' ? 'active' : ''}>EN</button>
           <button onClick={() => changeLanguage('ru')} className={language === 'ru' ? 'active' : ''}>RU</button>
         </div>
+      </div>
       </div>
       <Footer />
     </div>
