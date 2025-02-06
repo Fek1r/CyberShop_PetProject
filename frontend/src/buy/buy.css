@@ -1,6 +1,5 @@
 /* Контейнер для оформления заказа */
 .buy-container {
-  margin-top: 12vh;
   margin-left: 2vw;
   margin-right: 2vw;
   padding: 30px;
@@ -18,7 +17,7 @@
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-top:12vh;
   color: #ecf0f1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -26,6 +25,7 @@
 /* Форма */
 .buy-form {
   display: flex;
+  margin-top:12vh;
   flex-direction: column;
   gap: 20px;
   width: 100%;
