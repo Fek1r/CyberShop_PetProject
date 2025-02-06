@@ -1,0 +1,210 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для страницы Login */
+.login-page {
+    background-color:black;
+    margin-top:12vh;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Контейнер формы */
+.login-container {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    width: 320px;
+    animation: slideUp 1s ease-in-out;
+}
+
+footer{
+    margin-top:0;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Заголовок */
+.login-register-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    animation: fadeInText 1.2s ease-in-out;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        letter-spacing: -2px;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 0;
+    }
+}
+
+/* Поля ввода */
+.login-input-box {
+    position: relative;
+    margin-top: 16px;
+}
+
+.login-input-box input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 99px;
+    border: solid 2px transparent;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.login-input-box input:focus {
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Иконки */
+.login-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Кнопка регистрации */
+.login-register-button {
+    margin-top: 20px;
+    padding: 12px 26px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 99px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.login-register-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.login-register-button:active {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0.95);
+}
+
+/* Текст "Уже есть аккаунт?" */
+.login-already-have-account {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.login-already-have-account a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-already-have-account a:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: underline;
+}
+
+/* Переключатель языка */
+.login-language-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login-language-switcher button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.login-language-switcher button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.login-language-switcher button:active {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0.95);
+}
+
+.login-language-switcher .active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+    .login-input-box input {
+        font-size: 14px;
+    }
+    .login-register-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-container {
+        width: 400px;
+        padding: 40px;
+    }
+}

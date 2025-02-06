@@ -11,6 +11,7 @@ import Solutions from './solution/solution.jsx'
 import Park from './game/game.jsx'
 import Planet from './info/info.jsx'
 import Buy from './buy/buy.jsx'
+import Login from './login/login.jsx'
 
 
 function App() {
@@ -28,9 +29,11 @@ function App() {
         <Route path='/game' element={<Park />} />
         <Route path='/info' element={<Planet />} />
         <Route path='/buy' element={<Buy />} />
+        <Route path='/login' element={<Login />} />
 
       </Routes>
     </Router>
+    
   );
 }
 
