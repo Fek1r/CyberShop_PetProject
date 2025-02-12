@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.returner-login{
+    height: auto;
+}
 
 /* Стили для страницы Login */
 .login-page {
@@ -204,4 +207,11 @@ footer{
         width: 400px;
         padding: 40px;
     }
+}
+
+
+section{
+    background-color: #34495e;
+    border-radius: 99px;
+    background: linear-gradient(145deg, #2c3e50, #34495e);
 }

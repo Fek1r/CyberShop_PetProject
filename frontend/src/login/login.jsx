@@ -14,6 +14,7 @@ function Login() {
   };
 
   return (
+    <div className="returner-login">
     <div className="login-page">
       <div className="login-wrapper">
         <div className="login-container">
@@ -71,6 +72,7 @@ function Login() {
             <button onClick={() => changeLanguage('ru')} className={language === 'ru' ? 'active' : ''}>RU</button>
           </div>
         </div>
+      </div>
       </div>
       <Footer />
     </div>
