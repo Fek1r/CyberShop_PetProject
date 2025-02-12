@@ -1,0 +1,90 @@
+dashboard-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .sidebar .active {
+    color: #6200ea;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-card,
+  .account-card,
+  .bills-card,
+  .order-history {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .profile-info {
+    color: gray;
+  }
+  
+  .edit-profile {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .paid {
+    color: green;
+  }
+  
+  .not-paid {
+    color: red;
+  }
+  
+  .completed {
+    color: gray;
+  }
+  
+  .pending {
+    color: orange;
+  }
+  
+  .cancelled {
+    color: red;
+  }
