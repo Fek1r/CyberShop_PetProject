@@ -14,7 +14,7 @@
     background: black;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(247, 246, 246, 0.1);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.929);
     transition: transform 0.3s ease;
   }
   
@@ -56,10 +56,9 @@
   .order-history {
     background:black;
     color:white;
-    margin-top:2vh;
-    padding: 24px;
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.656);
     transition: transform 0.3s ease;
   }
   
@@ -123,4 +122,8 @@
   
   .cancelled {
     color: red;
+  }
+
+  .p{
+    margin-top:2vh;
   }
