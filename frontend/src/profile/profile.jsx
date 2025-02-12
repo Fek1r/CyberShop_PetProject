@@ -2,8 +2,8 @@ import React from "react";
 import { Card } from "./card";  
 import { Button } from "./button";
 import { Avatar } from "./avatar";
-
 import "./profile.css";
+import kkkImage from "./kkk.png";
 
 const Profile = () => {
   return (
@@ -24,7 +24,7 @@ const Profile = () => {
       <div className="main-content">
         {/* Profile Card */}
         <Card className="profile-card">
-          <Avatar src="./kkk.png" className="avatar" />
+        <Avatar src={kkkImage} className="avatar" />
           <div>
             <h2 className="profile-name">Sami Rahman</h2>
             <p className="profile-info">+1 856-589-996-1236</p>
