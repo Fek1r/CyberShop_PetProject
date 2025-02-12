@@ -55,6 +55,7 @@
     letter-spacing: 3.5px;
     margin-left:0vh;
     animation: fadeInDown 1s ease-in-out;
+    margin-top:40vh;
 }
 
 /* Subtitle Styling for Home with Light Font */
@@ -201,4 +202,12 @@
     .about-us-item {
         width: 100%; /* Full-width for smaller screens */
     }
+}
+
+.logo-center{
+    margin-top: -30.5vh !important;
+}
+
+.logo-center2{
+    margin-bottom: -35vh !important;
 }

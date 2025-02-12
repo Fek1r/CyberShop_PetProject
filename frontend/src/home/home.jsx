@@ -1,6 +1,7 @@
 import Footer from '../footer/footer';
 import React from 'react';
 import './home.css';
+import pc from "./pc.png";
 
 function HomePage() {
   return (
@@ -10,11 +11,11 @@ function HomePage() {
         <div className="home-text-container">
           <h1 className="home-title"> Welcome to PC GAMING CLUB </h1>
           <p className="home-description">
-            
+          <img src={pc} className="logo-center2" />
           </p>
         </div>
       </div>
-
+      <img src={pc} className="logo-center" />
       {/* About Us Section */}
       <div className="about-us-page">
         <div className="about-us-background">
