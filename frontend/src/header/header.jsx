@@ -1,5 +1,7 @@
+
 import { Link } from 'react-router-dom';
 import './header.css';
+import image12345 from './12345.png'; 
 import { useEffect } from 'react';
 
 function Header() {
@@ -35,11 +37,15 @@ function Header() {
                 <div className="contact-container">
                     <button><Link to="/contact">CONTACT US</Link></button>
                     <button><Link to="/login">Log In</Link></button>
+                    <Link to="/profile">
+                        <button className="image-button">
+                          <img src={image12345} alt="Button Icon" className="image-icon"/>
+                        </button>
+                    </Link>
                 </div>
-              
             </div>
         </div>
     );
 }
-
 export default Header;
+

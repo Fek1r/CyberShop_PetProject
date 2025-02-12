@@ -101,3 +101,38 @@
     background-color: silver;      
     color: white;               
 }
+
+.image-button-container {
+    display: flex;
+    align-items: center;
+    margin-left:2vh;
+    justify-content: center;
+}
+
+.image-button {
+    background-color: silver !important;
+    background: none;
+    margin-left:2vh;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px; /* Смягчение углов */
+}
+
+
+.image-icon {
+    width: 40px !important;
+    height: 40px !important;
+    visibility: visible !important;
+    margin-left:2vh;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    background: none !important;
+    border: none !important;
+}
+
