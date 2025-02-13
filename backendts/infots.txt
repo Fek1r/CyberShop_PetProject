@@ -1,0 +1,8 @@
+📌 Установка зависимостей
+Перед запуском убедитесь, что у вас установлены все нужные пакеты:
+
+npm init -y
+npm install express pg typeorm reflect-metadata cors body-parser
+npm install --save-dev @types/express @types/cors @types/node typescript ts-node nodemo
+--------------------------------------------------------------------------------------------
+
