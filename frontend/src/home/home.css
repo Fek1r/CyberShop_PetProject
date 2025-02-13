@@ -206,6 +206,7 @@
 
 .logo-center{
     margin-top: -30.5vh !important;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .logo-center2{

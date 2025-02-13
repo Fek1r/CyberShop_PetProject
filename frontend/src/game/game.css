@@ -11,7 +11,7 @@
 /* Стили для каждой секции */
 .section {
     width: 90%;
-    margin-left: 2vh;
+    margin-left: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

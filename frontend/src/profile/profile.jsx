@@ -4,6 +4,7 @@ import { Button } from "./button";
 import { Avatar } from "./avatar";
 import "./profile.css";
 import kkkImage from "./kkk.png";
+import Footer from '../footer/footer'; 
 
 const Profile = () => {
   return (
