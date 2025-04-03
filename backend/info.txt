@@ -1,6 +1,7 @@
 How to run:
     Python - python server.py
         source venv/bin/activate
+        
     JS - node server.js   
 
 

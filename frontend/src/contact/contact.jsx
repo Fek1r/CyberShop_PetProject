@@ -1,7 +1,10 @@
 import React from 'react';
 import Footer from '../footer/footer';
 import './contact.css';
-import img from './visa.png';
+import img1 from './human1.png';
+import img2 from './human2.png';
+import img3 from './human3.png';
+
 
 function Contact() {
     return (
@@ -9,7 +12,7 @@ function Contact() {
             <h1 className="contact-title">Izīrēšanas aģenti</h1>
             <div className="cont-info">
                 <div className="agent">
-                    <img src={img} alt="logo" className="img-logo" />
+                    <img src={img1} alt="logo" className="img-logo" />
                     <div className="agent-info">
                         <h2 className="agent-name">Romans</h2>
                         <p className="agent-phone">T: +371 00 000 000</p>
@@ -17,7 +20,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className="agent">
-                    <img src={img} alt="logo" className="img-logo" />
+                    <img src={img2} alt="logo" className="img-logo" />
                     <div className="agent-info">
                         <h2 className="agent-name">Belijs</h2>
                         <p className="agent-phone">T: +371 00 000 000</p>
@@ -25,7 +28,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className="agent">
-                    <img src={img} alt="logo" className="img-logo" />
+                    <img src={img3} alt="logo" className="img-logo" />
                     <div className="agent-info">
                         <h2 className="agent-name">Vovka</h2>
                         <p className="agent-phone">T: +371 00 000 000</p>

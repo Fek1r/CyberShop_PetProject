@@ -76,7 +76,7 @@
 
 .project-info {
     width: 50%;
-    height: 300px;
+    min-height: 300px;
     padding: 40px;
     background-color: #1d2327;
     color: white;
