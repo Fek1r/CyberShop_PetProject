@@ -7,7 +7,7 @@ const app = express();
 const port = 5003;
 
 // Middleware
-app.use(cors());
+app.use(cors()); 
 app.use(bodyParser.json());
 
 // Настройка подключения к PostgreSQL
