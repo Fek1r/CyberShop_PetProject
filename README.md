@@ -1,71 +1,71 @@
 # 📘 README: Flask Backend + Docker
 
-## 📌 Описание проекта
+## 📌 Project Description
 
-Проект представляет собой REST API на Flask, реализующий систему бронирования с PostgreSQL. Он позволяет:
+This project is a REST API built with Flask that implements a booking system backed by PostgreSQL. It supports:
 
-- Создавать заказы
-- Получать список доступных временных интервалов (таймслотов)
+- Creating bookings
+- Fetching available time slots for a given day
 
-Backend структурирован по архитектуре Model-Controller и полностью готов к контейнеризации через Docker.
+The backend follows a Model-Controller architecture and is fully containerized with Docker.
 
 ---
 
-## 🧱 Архитектура
+## 🧱 Architecture
 
 **Model-Controller (MC)**:
-- **Model** — ORM-модели SQLAlchemy
-- **Controller** — Blueprint-роуты и логика обработки
+- **Model** — SQLAlchemy ORM models
+- **Controller** — Blueprint routes and logic
 
-**Структура проекта:**
+**Project structure:**
 ```
 backend/
-├── app.py                  # Точка входа
-├── config.py               # Конфигурация Flask
+├── app.py                  # Entry point
+├── config.py               # Flask configuration
 ├── database.py             # SQLAlchemy init
-├── requirements.txt        # Зависимости Python
-├── Dockerfile              # Инструкция сборки контейнера
-├── docker-compose.yml      # Подъём Flask + PostgreSQL
+├── requirements.txt        # Python dependencies
+├── Dockerfile              # Container build instructions
+├── docker-compose.yml      # Launch Flask + PostgreSQL
 ├── models/
-│   └── order.py            # Модель Order
+│   └── order.py            # Order model
 ├── controllers/
-│   └── order_controller.py # Роуты и логика API
+│   └── order_controller.py # API logic
 ```
 
 ---
 
-## 🔌 Установка и запуск локально
+## 🔌 Local Installation
 
-1. Установить зависимости:
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Запустить приложение:
+2. Run the application:
 ```bash
 python app.py
 ```
 
 ---
 
-## 🔗 API
+## 🔗 API Endpoints
 
 ### `POST /orders`
-Создать новый заказ.
+Create a new order.
 
-**Пример тела запроса:**
+**Sample request body:**
 ```json
 {
-  "firstName": "Иван",
-  "lastName": "Иванов",
+  "firstName": "Ivan",
+  "lastName": "Ivanov",
   "contact": "+79991234567",
-  "orderType": "консультация",
+  "orderType": "consultation",
   "startTime": "2025-04-10T10:00:00",
   "endTime": "2025-04-10T11:00:00"
 }
 ```
 
-**Ответ (201):**
+**Response (201):**
 ```json
 {
   "message": "Order created successfully",
@@ -74,13 +74,13 @@ python app.py
 ```
 
 ### `GET /available-times?date=YYYY-MM-DD&duration=N`
-Получить список доступных слотов.
+Fetch available time slots for a specific day.
 
-**Пример:**
+**Example:**
 ```
 GET /available-times?date=2025-04-10&duration=1
 ```
-**Ответ:**
+**Response:**
 ```json
 [
   { "start": "2025-04-10T10:00:00", "end": "2025-04-10T11:00:00" },
@@ -152,8 +152,8 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
 
-### ⏱ Ожидание PostgreSQL
-Добавить в `app.py` перед инициализацией БД:
+### ⏱ Wait for PostgreSQL
+Add this to `app.py` before database initialization:
 ```python
 import time
 time.sleep(5)
@@ -161,30 +161,30 @@ time.sleep(5)
 
 ---
 
-## 🚀 Запуск через Docker
+## 🚀 Running with Docker
 
 ```bash
 docker-compose down
 docker-compose up --build
 ```
 
-Приложение будет доступно по адресу:
+The app will be available at:
 ```
 http://localhost:5003
 ```
 
 ---
 
-## 💡 Идеи для улучшения
-- JWT авторизация
-- Swagger / OpenAPI
-- Валидация через Pydantic
-- Админка и роли
-- Email / SMS уведомления
+## 💡 Ideas for Improvement
+- JWT authentication
+- Swagger / OpenAPI docs
+- Validation via Pydantic
+- Admin panel & role management
+- Email / SMS notifications
 
 ---
 
-## ✅ Заключение
+## ✅ Final Notes
 
-Проект готов для локального запуска и деплоя в продакшн-среде. Архитектура проста, расширяема и легко адаптируется под реальные задачи. Отличная база для онлайн-сервиса или внутреннего приложения.
+This backend is production-ready and easily extendable. With modular architecture and containerized deployment, it’s an ideal base for online services or internal tools.
 
