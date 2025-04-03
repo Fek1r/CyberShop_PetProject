@@ -6,7 +6,7 @@ import Image3 from './plan_club.png';
 import Image4 from './PS5.jpg';
 import Image5 from './solo.jpg';
 import Image6 from './vip_room.jpg';
-import Footer from '../footer/footer';
+import Footer from '../../components/footer/footer';
 
 const NewsSection = () => {
     // Array of news items

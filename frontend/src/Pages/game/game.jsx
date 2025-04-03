@@ -7,7 +7,7 @@ import Image4 from './LoL.jpg';
 import Image5 from './Pubg.jpg';
 import Image6 from './Valorant.jpeg';
 
-import Footer from '../footer/footer'; // Используем изображение для каждой секции
+import Footer from '../../components/footer/footer'; // Используем изображение для каждой секции
 
 const Park = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import './location.css';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-import Footer from '../footer/footer';   // Import the Footer component
+import Footer from '../../components/footer/footer';   // Import the Footer component
 
 const MapComponent = () => {
   const mapContainerStyle = {

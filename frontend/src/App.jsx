@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './header/header.jsx';
-import Home from './home/home.jsx';
-import About from './about/about.jsx';
-import NewJau from './new-jau/new-jau.jsx';
-import Contact from './contact/contact.jsx';
-import Projects from './reservation/reservation.jsx';
-import Footer from './footer/footer.jsx'; 
-import Location from './location/location.jsx';
-import Solutions from './solution/solution.jsx'
-import Park from './game/game.jsx'
-import Planet from './info/info.jsx'
-import Buy from './buy/buy.jsx'
-import Login from './login/login.jsx'
-import Profile from './profile/profile.jsx'
+import Header from './components/header/header.jsx';
+import Home from './Pages/home/home.jsx';
+//import About from './about/about.jsx';
+import NewJau from './Pages/new-jau/new-jau.jsx';
+import Contact from './Pages/contact/contact.jsx';
+import Projects from './Pages/reservation/reservation.jsx';
+import Footer from './components/footer/footer.jsx'; 
+import Location from './Pages/location/location.jsx';
+import Solutions from './Pages/solution/solution.jsx'
+import Park from './Pages/game/game.jsx'
+import Planet from './Pages/info/info.jsx'
+import Buy from './Pages/buy/buy.jsx'
+import Login from './Pages/login/login.jsx'
+import Profile from './Pages/profile/profile.jsx'
 
 
 function App() {
@@ -24,7 +24,6 @@ function App() {
         <Route path="/new-jau" element={<NewJau />} /> {/* Страница для NewJau */}
         <Route path='/contact' element={<Contact />} />
         <Route path='/reservation' element={<Projects />} />
-        <Route path='/about' element={<About />} />
         <Route path='/location' element={<Location />} />
         <Route path='/solution' element={<Solutions />} />
         <Route path='/game' element={<Park />} />

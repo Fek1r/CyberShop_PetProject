@@ -1,4 +1,4 @@
-import Footer from '../footer/footer';
+import Footer from '../../components/footer/footer';
 import React from 'react';
 import './home.css';
 import pc from "./pc.png";

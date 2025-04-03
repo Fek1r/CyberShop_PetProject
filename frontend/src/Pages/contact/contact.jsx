@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../footer/footer';
+import Footer from '../../components/footer/footer';
 import './contact.css';
 import img1 from './human1.png';
 import img2 from './human2.png';

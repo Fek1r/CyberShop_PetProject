@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
 import axios from "axios";
 import "./buy.css";
-import Footer from "../footer/footer";
+import Footer from "../../components/footer/footer.jsx";
 
 function Buy() {
   const [formData, setFormData] = useState({

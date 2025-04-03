@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./login.css";
 import { useTranslation } from 'react-i18next';
 import './i18n';
-import Footer from '../footer/footer';
+import Footer from '../../components/footer/footer';
 
 function Login() {
   const { t, i18n } = useTranslation();

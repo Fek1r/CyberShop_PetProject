@@ -43,7 +43,7 @@
     background-position: center;
     background-size: contain;    /* Ensures the entire image is visible within the container */
     background-repeat: no-repeat;
-    background-image: url('../head/image.png');
+    background-image: url('./image.png');
     margin-left:-13vh;
 }
 

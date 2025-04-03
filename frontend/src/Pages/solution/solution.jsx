@@ -1,6 +1,6 @@
 import React from 'react';
 import './solution.css';
-import Footer from '../footer/footer';
+import Footer from '../../components/footer/footer';
 import image1 from './image222.png'; // Adjust the path based on your project structure
 
 const Solutions = () => {
