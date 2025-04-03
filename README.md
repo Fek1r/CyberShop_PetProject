@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# 📘 README: Flask Backend + Docker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Описание проекта
 
-## Available Scripts
+Проект представляет собой REST API на Flask, реализующий систему бронирования с PostgreSQL. Он позволяет:
 
-In the project directory, you can run:
+- Создавать заказы
+- Получать список доступных временных интервалов (таймслотов)
 
-### `npm start`
+Backend структурирован по архитектуре Model-Controller и полностью готов к контейнеризации через Docker.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧱 Архитектура
 
-### `npm test`
+**Model-Controller (MC)**:
+- **Model** — ORM-модели SQLAlchemy
+- **Controller** — Blueprint-роуты и логика обработки
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Структура проекта:**
+```
+backend/
+├── app.py                  # Точка входа
+├── config.py               # Конфигурация Flask
+├── database.py             # SQLAlchemy init
+├── requirements.txt        # Зависимости Python
+├── Dockerfile              # Инструкция сборки контейнера
+├── docker-compose.yml      # Подъём Flask + PostgreSQL
+├── models/
+│   └── order.py            # Модель Order
+├── controllers/
+│   └── order_controller.py # Роуты и логика API
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔌 Установка и запуск локально
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Установить зависимости:
+```bash
+pip install -r requirements.txt
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Запустить приложение:
+```bash
+python app.py
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔗 API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `POST /orders`
+Создать новый заказ.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Пример тела запроса:**
+```json
+{
+  "firstName": "Иван",
+  "lastName": "Иванов",
+  "contact": "+79991234567",
+  "orderType": "консультация",
+  "startTime": "2025-04-10T10:00:00",
+  "endTime": "2025-04-10T11:00:00"
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Ответ (201):**
+```json
+{
+  "message": "Order created successfully",
+  "order": { ... }
+}
+```
 
-## Learn More
+### `GET /available-times?date=YYYY-MM-DD&duration=N`
+Получить список доступных слотов.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Пример:**
+```
+GET /available-times?date=2025-04-10&duration=1
+```
+**Ответ:**
+```json
+[
+  { "start": "2025-04-10T10:00:00", "end": "2025-04-10T11:00:00" },
+  { "start": "2025-04-10T11:00:00", "end": "2025-04-10T12:00:00" }
+]
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🐳 Docker & Docker Compose
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📦 requirements.txt
+```txt
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+psycopg2-binary
+python-dotenv
+```
 
-### Analyzing the Bundle Size
+### 📄 Dockerfile
+```dockerfile
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ⚙️ docker-compose.yml
+```yaml
+services:
+  web:
+    build: .
+    ports:
+      - "5003:5003"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+    depends_on:
+      - db
+    volumes:
+      - .:/app
 
-### Making a Progressive Web App
+  db:
+    image: postgres:15
+    restart: always
+    ports:
+      - "5440:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+volumes:
+  pgdata:
+```
 
-### Advanced Configuration
+### ⚙️ config.py
+```python
+import os
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+class Config:
+    SQLALCHEMY_DATABASE_URI = os.environ.get(
+        "DATABASE_URL", "postgresql://postgres:postgres@localhost:5440/postgres"
+    )
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+```
 
-### Deployment
+### ⏱ Ожидание PostgreSQL
+Добавить в `app.py` перед инициализацией БД:
+```python
+import time
+time.sleep(5)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🚀 Запуск через Docker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+docker-compose down
+docker-compose up --build
+```
+
+Приложение будет доступно по адресу:
+```
+http://localhost:5003
+```
+
+---
+
+## 💡 Идеи для улучшения
+- JWT авторизация
+- Swagger / OpenAPI
+- Валидация через Pydantic
+- Админка и роли
+- Email / SMS уведомления
+
+---
+
+## ✅ Заключение
+
+Проект готов для локального запуска и деплоя в продакшн-среде. Архитектура проста, расширяема и легко адаптируется под реальные задачи. Отличная база для онлайн-сервиса или внутреннего приложения.
+
