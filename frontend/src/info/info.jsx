@@ -11,26 +11,26 @@ const Planet = () => {
             <div className="planet-content">
                 <h1 className="planet-title">INFO</h1>
                 <p className="planet-description">
-                    Our 5-year Vision is focused on transforming the future of sustainability. We're dedicated to enhancing the ESG (Environmental, Social, and Governance) roadmap through strategic initiatives like our state-of-the-art Solar Park and more.
+                Our 5-year Vision is focused on redefining the esports and gaming community experience. We're dedicated to fostering sustainable growth through innovative gaming solutions, advanced technology, and inclusive community development.
                 </p>
                 
                 <div className="roadmap-section">
                     <div className="roadmap-card">
                         <h3 className="roadmap-title">Year 1: Environmental Impact</h3>
                         <p className="roadmap-description">
-                            Our first year focuses on minimizing carbon footprints and setting the foundation for sustainable practices across all operations.
+                        Our first year focuses on creating a welcoming, inclusive gaming environment and establishing high-quality infrastructure, providing gamers with exceptional playing conditions and reliable network performance.
                         </p>
                     </div>
                     <div className="roadmap-card">
                         <h3 className="roadmap-title">Year 2: Social Responsibility</h3>
                         <p className="roadmap-description">
-                            Strengthening community relationships, promoting ethical labor practices, and focusing on diversity and inclusion within the workplace.
+                        Strengthening community ties through tournaments, workshops, and local partnerships. We prioritize ethical practices, diversity, and creating safe, positive spaces for all players and staff.
                         </p>
                     </div>
                     <div className="roadmap-card">
                         <h3 className="roadmap-title">Year 3-5: Scaling Innovation</h3>
                         <p className="roadmap-description">
-                            Expanding renewable energy sources, including the large-scale Solar Park, and implementing advanced sustainable technologies across all departments.
+                        Expanding our club’s capabilities by integrating cutting-edge gaming hardware, dedicated streaming studios, and advanced LAN facilities. We aim to lead innovation in esports experiences, positioning our club as a premier gaming destination.
                         </p>
                     </div>
                 </div>

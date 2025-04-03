@@ -9,7 +9,7 @@ const Solutions = () => {
             <div className="solutions-content">
                 <h2 className="solutions-title">SOLUTIONS</h2>
                 <p className="solutions-description">
-                    Build to suit, lease, Office-warehouse, Masterplan. We provide customized solutions tailored to meet the unique needs of businesses. Whether you're looking for state-of-the-art office spaces, versatile warehouses, or comprehensive master planning, we deliver with precision and quality.
+                    Gaming setups, Dedicated Spaces, LAN areas, Custom planning. We provide customized solutions tailored specifically for computer clubs and esports centers. Whether you're looking for state-of-the-art gaming stations, dedicated streaming rooms, fully-equipped LAN areas, or comprehensive facility layouts, we deliver precision, quality, and optimal performance to elevate every gamer's experien
                 </p>
             </div>
             <div className="solutions-image-container">

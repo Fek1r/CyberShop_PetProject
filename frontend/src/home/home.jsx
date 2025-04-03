@@ -9,7 +9,7 @@ function HomePage() {
       {/* Home Background Text */}
       <div className="home-background">
         <div className="home-text-container">
-          <h1 className="home-title"> Welcome to PC GAMING CLUB </h1>
+          <h1 className="home-title"> WELCOME TO PC CYBER CLUB </h1>
           <p className="home-description">
           <img src={pc} className="logo-center2" />
           </p>
