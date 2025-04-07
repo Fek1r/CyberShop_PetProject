@@ -1,9 +1,14 @@
 How to run:
     Python - python server.py
         source venv/bin/activate
-        
+
     JS - node server.js   
 
+
+Docker:
+    docker-compose down  # остановим старые контейнеры
+    docker-compose up --build
+    !!!!порт в docker-compose.yml поменен из за того что 5433 был занят
 
 
 SQL TABLE:
